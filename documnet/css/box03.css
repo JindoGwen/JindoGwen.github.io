@@ -1,0 +1,35 @@
+.basic01 {
+    padding:100px 0;
+    background: #fff;
+    text-align: center;
+}
+.basic01 h2 {
+    color: bisque;
+}
+
+.basic01 h2 {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+
+}
+
+.basic01 p {
+    font-size: 21px;
+    margin: 0 0 30px 0;
+    color: aquamarine;
+}
+
+.basic01 .container {
+    display: flex;
+    gap: 30px;
+    width: 1080px;
+    margin: 0 auto;
+    background: #fff;
+}
+.basic01 .container img {
+    width: 100%;
+}
+.basic01 figure {
+    flex: 1; 
+}
