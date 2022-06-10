@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display / display 01</title>
+    <style>
+        /* inline 요소는 width, height , 상하 margin , padding 값을 줄수가 없다. 백그라운드가
+        적용되는 것 처럼 보이나 공간을 차지 하지 않는다. ? */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .inline span {
+            width: 100px;
+            height: 100px;
+            background: rgba(255,0,0,0.3);
+            color: #fff;
+            padding: 50px 0;
+            margin: 50px 0;
+        }
+        /* inline 요소를 block 요소로 바꿈 */
+        .inlineTOBlock span {
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: rgba(255,0,0,0.3);
+            color: #fff;
+            padding: 30px 0;
+            margin: 30px 0;
+        }
+
+        /*  inline-block 요소의 부모에 text-align:center 로 박스를 가로로 배열할 수 있다.
+            inline-block 요소 사이의 박스사이의 간격을 붙이려면 font-size :0; 을 해주어야 한다.
+        */
+
+        .inlineTOinlineBlock  {
+            text-align: center;
+            font-size: 0;
+        }
+
+        /* inline 요소를 inline-block 요소로 바꿈.
+        박스 사이의 간격이 4px 정도 생긴다. font-size 를 다시 적용 
+         */
+        .inlineTOinlineBlock span {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            font-size: 20px;
+            background: rgba(255,0,0,0.3);
+            color: #fff;
+            padding: 30px 0;
+            margin: 30px 0;
+        }
+        .block {
+            background: #ff0;
+        }
+
+
+        /* 인라인 요소를 줘서 padding 이 안먹는 상황 이지만 background 를 줘서 상하 padding 이 
+        먹는것 처럼 보임  */ 
+        .block div {
+            display: inline;
+            width: 100px;
+            height: 100px;
+            font-size: 20px;
+            background: rgba(255,0,0,0.3);
+            color: #fff;
+            padding: 30px 0;
+            margin: 30px 0;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <section class="inline">
+        <span>sapn01</span>
+        <span>sapn02</span>
+        <span>sapn03</span>
+        <span>sapn04</span>
+        <span>sapn05</span><br/>
+        
+        <span>sapn01</span>
+        <span>sapn02</span>
+        <span>sapn03</span>
+        <span>sapn04</span>
+        <span>sapn05</span>
+    </section>
+    <section class="inlineTOBlock">
+        <span>sapn01</span>
+        <span>sapn02</span>
+        <span>sapn03</span>
+        <span>sapn04</span>
+        <span>sapn05</span>
+    </section>
+
+    <section class="inlineTOinlineBlock">
+        <span>sapn01</span>
+        <span>sapn02</span>
+        <span>sapn03</span>
+        <span>sapn04</span>
+        <span>sapn05</span>
+    
+    </section>
+    <section class="block">
+        <div>box01</div>
+        <div>box02</div>
+        <div>box03</div>
+        <div>box04</div>
+        <div>box05</div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 선택자 기본 / 기본 박스 02</title>
+    <style>
+        /* 모든 선택자  */
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /*outline: 1px solid #ff0000;*/
+        }
+
+        /* tag 선택자 / 후손 선택자(한칸 띄어야한다) */
+        section li  {
+            color: #ff0000;
+
+        }
+        section li:nth-child(1) {
+            color: #369;
+        }
+        section li:nth-child(2) {
+            background: #ff0;
+        }
+        section div:nth-of-type(2) {
+            color: #0ff;
+        }
+
+        #color {          /* ID 는 #으로 표시 */
+            color: #0f0;
+        }
+        .color {         /* class 는 .으로 표시  class 보다 id 값이 우선으로 적용된다. */ 
+            color: #359;
+        }
+
+        .color~li {             /* ~ 선택자 는 형제 선택자 class color 아래 li 전부 선택 */ 
+            color: lightcoral;
+        }
+
+        .color+li {    
+            color: blue;  /* +  선택자 는 바로 밑 후손 */ 
+
+        }
+        input {
+            outline: none; /* outline none 을 통해 input 클릭시 검은 테두리를 없앴다*/
+        }
+        
+        input[type="text"] { 
+            border: 1px  solid #f00;
+        }
+        
+        [class="color"] {
+            background: #ff0;
+        }
+
+        [class*="col"] {
+            background: #ff0;
+        }
+
+        section ul, 
+        section div {   /*, 는 그룹 선택자 라는 뜻으로  2개 이상의 선택자를 묶을 때 사용*/
+            background: #ddd;
+
+        }
+
+        
+
+
+
+    </style>
+</head>
+
+<body>
+    <section> <!-- section 은 body 의 nth 1-->
+    <ul>
+        <li>BOX01</li> <!-- ul 의 li nth 1-->
+        <li id="color" class="color">BOX02</li>
+        <li class="col">BOX03</li>
+        <li>BOX04</li>
+        <li>BOX05</li>
+        <li>BOX06</li>
+        <li>BOX07</li>
+    </ul>
+    <div> 
+        BOX08
+    </div>
+    <div> 
+        BOX09
+    </div>
+    <input type="text">
+    <input type="search">
+</section>
+    <div>
+        BOX10
+    </div>
+</body>
+</html>

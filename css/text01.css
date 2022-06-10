@@ -1,0 +1,59 @@
+.header {
+    background-image: url(../img/연습용.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;
+    
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 100px;
+    
+}
+
+
+
+.header nav>ul {
+    display: flex;
+    gap: 40px;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+  
+
+}
+
+.header na
+
+.header .bth {
+    margin: 10px 0 0 250px;
+    
+
+}
+
+.header .bth i {
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 30px;
+    cursor: pointer;
+   
+}
+
+.header .logo {
+    margin: 5px 35px 0 0px;
+}
+
+.header .hover {
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: #ddd;
+}
+
+
+
+

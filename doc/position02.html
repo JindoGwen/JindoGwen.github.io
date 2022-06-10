@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position02</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        .sticky {
+            position: sticky;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+            line-height: 100vh;
+        }
+        header {
+            background: red;
+            
+
+        }
+
+        main {
+            background: blue;
+        }
+
+        footer {
+            background: yellow;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .container figure {
+            flex: 1;
+            line-height: 1.4;
+        }
+
+        .container figure:nth-child(2) {
+            background: #fff;
+            height: 100vh;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="sticky">
+        header 
+    </header>
+    <main class="sticky">
+        main
+    </main>
+    <section>
+        <div class="container">
+            <figure class="sticky">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Repellat odio dolore harum quaerat fuga. Laborum laboriosam ipsum at 
+                magnam praesentium atque porro expedita omnis veritatis pariatur, 
+                exercitationem saepe harum corrupti!
+            </figure>
+            <figure class="sticky">
+
+
+
+            </figure>
+        </div>
+    </section>
+    <footer class="sticky">
+        footer
+    </footer>
+    
+    
+
+
+    
+    
+</body>
+</html>
