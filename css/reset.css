@@ -111,12 +111,7 @@ i {
     font-style: normal;
 }
 
-button {
-    color: inherit;
-    border: 0;
-    background: none;
-    cursor: pointer;
-}
+
 
 hr {
     margin: 0;
