@@ -1,59 +1,67 @@
-.header {
-    background-image: url(../img/연습용.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    height: 100vh;
+.section {
+    position: relative;
+    padding: 100px 0;
+}
+
+
+
+.section .main figure {
+    padding: 0 0 0 80px;
     
 }
 
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
-    margin: 0 auto;
-    line-height: 100px;
-    
+.section .slick-dots {
+    margin: 30px 0;
+    text-align: center;
 }
 
 
-
-.header nav>ul {
-    display: flex;
-    gap: 40px;
-    font-size: 17px;
-    color: #fff;
-    cursor: pointer;
-  
-
-}
-
-.header na
-
-.header .bth {
-    margin: 10px 0 0 250px;
-    
-
-}
-
-.header .bth i {
-    font-size: 25px;
-    color: #fff;
-    letter-spacing: 30px;
-    cursor: pointer;
-   
-}
-
-.header .logo {
-    margin: 5px 35px 0 0px;
-}
-
-.header .hover {
-    display: block;
-    width: 100px;
-    height: 1px;
+.section .slick-dots li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
     background: #ddd;
+    margin: 0 15px;
+    border-radius: 50%;
 }
 
 
+.section .slick-dots li.slick-active {
+    background: #169;
+}
+
+.section .slick-dots button {
+    display: none;
+    
+}
 
 
+.section .slide_arrows i {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50% , - 50%);
+    font-size: 40px;
+    color: #fff;
+    background: rgba(0, 0 , 0, 0.5);
+    padding: 10px 20px;
+
+}
+
+.section .slide_arrows i:nth-child(1) {
+    margin: 0 0 0 -650px;
+}
+.section .slide_arrows i:nth-child(2) {
+    margin: 0 0 0 650px;
+}
+
+.section  .box {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-600px);
+    width: 400px;
+    height: 600px;
+    background: #fff;
+    border: 1px solid#333;
+}
