@@ -57,11 +57,27 @@
 
 .section  .box {
     position: absolute;
-    top: 0;
-    left: 50%;
+    top: 200px;
+    left: 65%;
     transform: translateX(-600px);
-    width: 400px;
-    height: 600px;
+    width: 200px;
+    height: 400px;
     background: #fff;
     border: 1px solid#333;
+}
+
+.section  .box  .num {
+    position: absolute;
+    font-size: 30px;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.section  .content>li {
+    display: none;
+}
+.section  .content>li.on {
+    display: block;
 }
