@@ -1,83 +1,108 @@
-.section {
+#header {
+    line-height: 100px;
+    border-bottom: 1px solid#000;
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+#header .gnb>ul{
+    display: flex;
+}
+
+
+#header .gnb>ul a {
+    display: block;
+    padding: 0 20px;
+}
+
+#main {
     position: relative;
-    padding: 100px 0;
+
 }
 
+.main_slider figure {
+    position: relative;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 
-
-.section .main figure {
-    padding: 0 0 0 80px;
-    
 }
 
-.section .slick-dots {
-    margin: 30px 0;
-    text-align: center;
+.main_slider .itm01 {
+    background-image: url(../img/mainvisual01.jpg);
+}
+.main_slider .itm02 {
+    background-image: url(../img/mainvisual02.jpg);
+}
+.main_slider .itm03 {
+    background-image: url(../img/mainvisual03.jpg);
 }
 
-
-.section .slick-dots li {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: #ddd;
-    margin: 0 15px;
-    border-radius: 50%;
-}
-
-
-.section .slick-dots li.slick-active {
-    background: #169;
-}
-
-.section .slick-dots button {
-    display: none;
-    
-}
-
-
-.section .slide_arrows i {
+.main_slider .inner {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50% , - 50%);
-    font-size: 40px;
+    transform: translate(-50% , -50%);
+    width: 1200px;
     color: #fff;
-    background: rgba(0, 0 , 0, 0.5);
-    padding: 10px 20px;
-
+    text-shadow: 0 0 2px #000;
 }
 
-.section .slide_arrows i:nth-child(1) {
-    margin: 0 0 0 -650px;
-}
-.section .slide_arrows i:nth-child(2) {
-    margin: 0 0 0 650px;
+.main_visual {
+    position: relative;
 }
 
-.section  .box {
+
+.main_visual .num {
     position: absolute;
-    top: 200px;
-    left: 65%;
-    transform: translateX(-600px);
-    width: 200px;
-    height: 400px;
-    background: #fff;
-    border: 1px solid#333;
+    top: 50px;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/KakaoTalk_20220615_112745164.png);
+    background-position-y: 0;
+    margin: 0 0 0 500px;
+    transition: 0.3s;
 }
 
-.section  .box  .num {
+
+.main_visual .custopm_dots {
     position: absolute;
-    font-size: 30px;
-    bottom: 80px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    width: 1200px;
+    background: #ddd;
+    display: flex;
 }
 
 
-.section  .content>li {
-    display: none;
+.main_visual .custopm_dots li {
+    position: relative;
+    flex: 1;
+    
 }
-.section  .content>li.on {
+
+
+.main_visual .custopm_dots li {
+    position: relative;
+    flex: 1;
+    
+}
+
+.main_visual .custopm_dots li~li {
+    border-left: 1px solid #fff;
+}
+
+.main_visual .custopm_dots li a {
+    position: relative;
     display: block;
+    padding: 10px;
 }
