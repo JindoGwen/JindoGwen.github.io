@@ -307,3 +307,26 @@
 .mainContent .container figure:hover img {
     transform: scale(1.3);
 }
+
+
+.movie_bg {
+    padding: 100px 0;
+    text-align: center;
+    background-image: url(../img/bestseller-bg.jpg);
+    background-attachment: fixed;
+    height: 50vh;
+   
+}
+
+.container02 {
+    display: flex;
+    width: 1200px;
+    margin: -300px auto auto auto;
+   
+}
+
+.container02 figure:hover img {
+    transform: rotate(-5deg);
+    transition: 0.1s;
+    
+}
