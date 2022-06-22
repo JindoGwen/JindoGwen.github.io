@@ -1,0 +1,56 @@
+.header {
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 100px ;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .container h2 {
+    width: 100px;
+    height: 100px;
+
+}
+
+.header .container nav>ul {
+    display: flex;
+    
+}
+
+.header .container nav>ul>li {
+    padding:  0 15px;
+    font-size: 17px;
+}
+
+.mainVisual {
+    margin: 0 auto;
+    
+}
+
+.mainBg .itm01 {
+    position: relative;
+    background: url(../img/main.jpg) no-repeat center center/cover;
+    height: 750px;
+}
+
+.mainBg .itm01 .inner {
+     position: absolute;
+     top: 40%;
+     left: 20%;
+     color: #fff;
+     text-shadow: 0 0 3px #000;
+}
+
+.mainBg .itm01 .inner  h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+.mainBg .itm01 .inner  p {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}

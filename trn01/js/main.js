@@ -28,4 +28,19 @@ $(function(){
         $('.mainSlider').slick('slickNext')
     })
     
+    $('#utb').YTPlayer({
+        videoURL:'http://youtu.be/BsekcY04xvQ',
+        containment:'.utb',
+        autoPlay:true, 
+        mute:true, 
+        startAt:0, 
+        opacity:1,
+        showControls: false,
+        playOnlyIfVisible: true,
+    });
+
+    $('.utb .zoom').on('click', function (e) {
+        e.preventDefault();
+        $('#utb').YTPFullscreen()
+    })
 })
