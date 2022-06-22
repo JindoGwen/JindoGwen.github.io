@@ -27,6 +27,7 @@
 }
 
 .main01 {
+    position: relative;
     height: 700px;
     border-bottom: 1px solid #333;
 
@@ -35,5 +36,67 @@
     background: url(../img/main.jpg) no-repeat;
     height: 700px;
     background-position: center;
-   
+    background-size: cover;
+
 }
+
+.main01 .mainText {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    
+}
+
+.main01 .mainText h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff; 
+    margin: 10px 0;
+}
+.main01 .mainText p {
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.main02 {
+    padding: 100px 0;
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.left .mainText02 {
+    
+    line-height: 50px;
+    
+}
+
+.mainText02>span::before {
+    content: "";
+    display: inline-block;
+    margin:0 2px 5px 0;
+    width: 50px;
+    height: 1px;
+    background-color: #333;
+}
+
+.mainText02>span {
+    margin: 0 0 0 5px;
+}
+
+.mainText02>h2 {
+    font-size: 38px;
+    font-weight: 700;
+
+}
+
+.mainText02>p {
+    font-size: 15px;
+    margin: 50px auto;
+    line-height: 21px;
+}
+
+
