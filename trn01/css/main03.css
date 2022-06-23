@@ -729,16 +729,19 @@
 .right_content {
     display: inline-block;
     background-color: #fff;
-    margin: 110px 0 0 0;
+    padding: 45px;
+
     border: 1px solid #333;
 }
 .right_content h2 {
+    text-align: center;
+    margin: 0 0 10px 0px ;
     color: #f00;
-    font-size: 15px;
+    font-size: 30px;
 }
 
 .right_content p {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .right_content li {
