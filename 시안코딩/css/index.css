@@ -72,11 +72,8 @@
     margin-right: 150px;
 }
 
-
 .left .mainText02 {
-    
-    line-height: 50px;
-    
+     line-height: 50px;
 }
 
 .mainText02>span::before {
@@ -136,14 +133,19 @@
 }
 
 .main03 .container .box01 figure {
-    flex: 1; /* flex 1 을 줬을때 높이값도 같아지게 하는방법이 뭘까요? */
+    flex: 1;
+    
     
 }
 
+.main03 .container .box01 figure>img {
+   width: 400px; 
+   height: 200px;
+}
 
 .box01 figure>p {
     position: absolute;
-    bottom: 41px;
+    bottom: -30px;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 10px 5px;
