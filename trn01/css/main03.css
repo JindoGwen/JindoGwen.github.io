@@ -723,14 +723,13 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    line-height: 20px;
+    line-height: 23px;
     text-decoration: underline;
 }
 .right_content {
     display: inline-block;
     background-color: #fff;
     padding: 45px;
-
     border: 1px solid #333;
 }
 .right_content h2 {
