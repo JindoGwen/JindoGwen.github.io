@@ -314,7 +314,7 @@
 }
 
 .main06 .mainText06 {
-    margin:  0 0 100px 0;
+    margin:  0 0 50px 0;
     font-size: 25px;
     font-weight: 500;
 
@@ -378,7 +378,7 @@
 }
 
 #footer .topIcon {
-    margin: 0 0 30px 0;
+    margin: -20px 0 30px 0;
     font-size: 25px;
     gap: 30px;
     color: #fff;
