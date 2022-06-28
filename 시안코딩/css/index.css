@@ -175,7 +175,7 @@
 }
 
 .main04 {
-    padding: 150px 550px 50px 550px;
+    padding: 150px 450px 50px 450px;
     width: 1200px 0;
     margin: 0 auto;
     text-align: center;
@@ -284,7 +284,7 @@
 }
 
 .main05 .display_box .display_img {
-    background-image: url(/시안코딩/img/middle.jpg );
+    background-image: url(../img/middle.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     height: 600px;
