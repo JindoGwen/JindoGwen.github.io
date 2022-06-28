@@ -27,6 +27,8 @@
     font-size: 18px;
 }
 
+
+
 .main01 {
     position: relative;
     height: 700px;
@@ -197,6 +199,7 @@
     right: 70px;
     background: #ddd;
     height: 250px;
+    
 }
 
 .main04 .right02 .content {
