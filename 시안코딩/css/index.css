@@ -16,14 +16,15 @@
     margin: 10px 0 0 0;
 }
 
+
 .header .container nav>ul {
     display: flex;
     line-height: 100px;
-    gap: 30px;
+    gap: 50px;
 }
 
 .header .container nav>ul>li {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .main01 {
@@ -43,7 +44,7 @@
 .main01 .mainText {
     position: absolute;
     top: 40%;
-    left: 20%;
+    left: 22%;
     
 }
 
@@ -132,7 +133,7 @@
     
 }
 
-.main03 .container .box01 figure img{
+.main03 .container .box01 figure {
     background-color: #000;
     flex: 1;
 }
@@ -140,14 +141,18 @@
 .main03 .container .box01 figure>img {
    width: 400px; 
    height: 200px;
+   transition: 0.3s;
 }
 
-.main03 .container .box01 figure:hover img p{
+.main03 .container .box01 figure:hover img {
     opacity:0.7
     
 }
+.main03 .container .box01 figure:hover p {
+    background: #f00;
+}
 
-.box01 figure>p {
+.box01 figure>a>p {
     position: absolute;
     font-size: 20px;
     font-weight: 100;
@@ -158,7 +163,7 @@
     transition: 0.3s;
 }
 
-.box01 figure>p::before {
+.box01 figure>a>p::before {
     position: absolute;
     inset: auto auto 0 0;
     content: "";
@@ -169,7 +174,245 @@
 
 }
 
-.box01 figure>a:hover {
-    background: #f00;
+.main04 {
+    padding: 150px 550px 50px 550px;
+    width: 1200px 0;
+    margin: 0 auto;
+    text-align: center;
 }
 
+.main04 .box02 {
+    display: flex;
+}
+
+.main04 .box02 .left02>figure {
+    width: 550px;
+    height: 400px;
+    margin: 0 0 0 70px;
+}
+
+.main04 .right02 {
+    position: relative;
+    top: 24px;
+    right: 70px;
+    background: #ddd;
+    height: 250px;
+}
+
+.main04 .right02 .content {
+    padding: 30px ;
+        
+}
+
+.right02 .content span {
+   display: block;
+   margin: 30px 150px 15px 0;
+}
+.right02 .content span::before {
+    content: "";
+    display: inline-block;
+    margin:0 2px 5px 0;
+    width: 50px;
+    height: 1px;
+    background-color: #333;
+}
+
+.right02 .content h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+}
+
+.right02 .content p {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+
+
+.main04 .box03 {
+    display: flex;
+    
+}
+
+.main04 .box03 .right03>figure {
+    width: 550px;
+    height: 400px;
+    margin: 0 70px 0 0;
+}
+
+.main04 .left03 {
+    position: relative;
+    top: 31px;
+    right: -70px;
+    background: #ddd;
+    height: 250px;
+}
+
+.main04 .left03 .content02 {
+    padding: 30px ;
+        
+}
+
+.left03 .content02 span {
+   display: block;
+   margin: 30px 150px 15px 0;
+}
+.left03 .content02 span::before {
+    content: "";
+    display: inline-block;
+    margin:0 2px 5px 0;
+    width: 50px;
+    height: 1px;
+    background-color: #333;
+}
+
+.left03 .content02 h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+}
+
+.left03 .content02 p {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+
+.main05 {
+    text-align: center;
+}
+
+.main05 .display_box .display_img {
+    background-image: url(/시안코딩/img/middle.jpg );
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.display_box .display_text {
+    position: relative;
+    top: 250px;
+}
+
+.display_box .display_text h2 {
+    margin: 0 0 30px 0;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+}
+.display_box .display_text p {
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.main06 {
+    padding: 150px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main06 .mainText06 {
+    margin:  0 0 100px 0;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.main06 .mainboxes {
+
+    display: flex;
+}
+
+.main06 .mainboxes figure {
+    flex: 1;
+}
+
+.mainboxes img {
+    width: 500px;
+    height: 300px;
+}
+
+.mainboxes .displayFlex {
+    position: relative;
+}
+
+.mainboxes figure a {
+    position: absolute;
+    top: 255px;
+    right: 380px ;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    background-color: #000;
+    width: 135px;
+    padding: 13px 0;
+    opacity: 0.7;
+}
+
+.mainboxes figure a::before {
+    position: absolute;
+    inset: auto auto 0 0;
+    content: "";
+    width: 5px;
+    height: 46px;
+    background: #f00;
+  
+}
+
+.mainboxes figure a:hover {
+    background-color: #f00;
+}
+
+.mainboxes .displayFlex p {
+    padding: 15px 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#footer {
+    padding: 100px 0 0 0;
+    background: #ddd;
+    text-align: center;
+}
+
+#footer .topIcon {
+    margin: 0 0 30px 0;
+    font-size: 25px;
+    gap: 30px;
+    color: #fff;
+}
+
+#footer .topIcon a {
+    background: #f00;
+    padding: 1px;
+
+}
+
+#footer .middleText .copyRight {
+    margin: 0 0 25px 0;
+}
+
+
+#footer .bottomMenu ul {
+    
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+    gap: 30px;
+
+}
+
+#footer .bottomMenu ul>li {
+    
+    font-size: 17px;
+}
+
+#footer .bottomMenu ul>li~li::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 17px;
+    background: #333;
+}
