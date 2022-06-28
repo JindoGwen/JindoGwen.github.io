@@ -311,6 +311,7 @@
     padding: 150px 0;
     margin: 0 auto;
     text-align: center;
+    
 }
 
 .main06 .mainText06 {
@@ -330,18 +331,19 @@
 }
 
 .mainboxes img {
-    width: 500px;
+    width: 430px;
     height: 300px;
 }
 
 .mainboxes .displayFlex {
     position: relative;
+    
 }
 
 .mainboxes figure a {
     position: absolute;
     top: 255px;
-    right: 380px ;
+    right: 317px ;
     font-size: 20px;
     color: #fff;
     font-weight: 300;
