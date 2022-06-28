@@ -396,23 +396,23 @@
 
 
 #footer .bottomMenu ul {
-    
     display: flex;
     justify-content: center;
     margin: 50px 0 0 0;
-    gap: 30px;
+
 
 }
 
 #footer .bottomMenu ul>li {
-    
     font-size: 17px;
+    color: rgb(112, 40, 40);
 }
 
 #footer .bottomMenu ul>li~li::before {
     content: "";
-    position: absolute;
+    display: inline-block;
+    margin: 0 35px;
     width: 1px;
     height: 17px;
-    background: #333;
+    background: rgb(155, 151, 151);
 }
