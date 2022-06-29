@@ -50,8 +50,7 @@
     inset: 50% auto auto 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    text-shadow: 0 0 3px #000;
-    
+    text-shadow: 0 0 3px #000;    
 }
 
 .main01 .mainText h2 {
@@ -67,7 +66,7 @@
 
 .mainSlider .slick-dots {
     position: absolute;
-    inset: auto auto 10px 50% ;
+    inset: auto auto 10px 50%;
     transform: translateX(-50%);
 }
 
@@ -89,7 +88,6 @@
     color: #fff;
 }
 
-
 .slideNum {
     position: absolute;
     inset: 50px auto auto 50%;
@@ -99,10 +97,6 @@
     text-shadow: 0 0 3px #000;
     font-size: 41px;
 }
-
-
-
-
 
 .main02 {
     padding: 100px 0;
@@ -213,8 +207,6 @@
     width: 5px;
     height: 44px;
     background: #f00;
-  
-
 }
 
 .main04 {
@@ -267,14 +259,9 @@
     font-size: 15px;
     line-height: 17px;
 }
-
-
-
 .main04 .box03 {
-    display: flex;
-    
+    display: flex;   
 }
-
 .main04 .box03 .right03>figure {
     width: 550px;
     height: 400px;
