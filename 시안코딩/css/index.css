@@ -27,39 +27,82 @@
     font-size: 18px;
 }
 
-.main01 {
+.main01 .mainSlider figure {
     position: relative;
-    height: 700px;
-    border-bottom: 1px solid #333;
+    height: 600px;
 
 }
-.main01 .main_Bg {
-    background: url(../img/main.jpg) no-repeat;
-    height: 700px;
-    background-position: center;
-    background-size: cover;
-
+.main01 .main_Bg01 {
+    background: url(../img/main.jpg) no-repeat center center/cover ;
+    
+}
+.main01 .main_Bg02 {
+    background: url(../img/constucion.jpg) no-repeat center center/cover ;
+    
+}
+.main01 .main_Bg03 {
+    background: url(../img/second.jpg) no-repeat center center/cover;
+    
 }
 
 .main01 .mainText {
     position: absolute;
-    top: 40%;
-    left: 22%;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 0 0 3px #000;
     
 }
 
 .main01 .mainText h2 {
     font-size: 50px;
     font-weight: 700;
-    color: #fff; 
-    margin: 10px 0;
+    margin: 0 0 10px 0;
 }
 .main01 .mainText p {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
-    color: #fff;
-    margin: 10px 0;
+    margin: 0 0 10px 0;
 }
+
+.mainSlider .slick-dots {
+    position: absolute;
+    inset: auto auto 10px 50% ;
+    transform: translateX(-50%);
+}
+
+ .mainSlider .slick-dots li {
+    display: inline-block;
+}
+
+ .mainSlider .slick-dots button {
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    width: 22px;
+    height: 22px;
+    margin: 0 2px;
+}
+
+ .mainSlider .slick-dots li.slick-active button {
+    background: rgb(26, 25, 25);
+    color: #fff;
+}
+
+
+.slideNum {
+    position: absolute;
+    inset: 50px auto auto 50%;
+    margin: 0 0 0 600px;
+    transform: translateX(-100%);
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    font-size: 41px;
+}
+
+
+
+
 
 .main02 {
     padding: 100px 0;
@@ -175,7 +218,7 @@
 }
 
 .main04 {
-    padding: 150px 550px 50px 550px;
+    padding: 150px 450px 50px 450px;
     width: 1200px 0;
     margin: 0 auto;
     text-align: center;
@@ -197,16 +240,13 @@
     right: 70px;
     background: #ddd;
     height: 250px;
+    padding: 0 40px;
 }
 
-.main04 .right02 .content {
-    padding: 30px ;
-        
-}
 
 .right02 .content span {
    display: block;
-   margin: 30px 150px 15px 0;
+   margin: 30px 80px 15px 0px;
 }
 .right02 .content span::before {
     content: "";
