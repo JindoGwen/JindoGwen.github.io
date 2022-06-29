@@ -320,9 +320,7 @@
 }
 
 .main05 .display_box .display_img {
-    background-image: url(/시안코딩/img/middle.jpg );
-    background-repeat:no-repeat;
-    background-size: cover;
+    background: url(/시안코딩/img/middle.jpg ) no-repeat fixed center center/cover ;
     height: 600px;
 }
 
