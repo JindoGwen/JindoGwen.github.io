@@ -58,13 +58,14 @@
     font-size: 25px;
     font-weight: 300;
     color: #fff;
-    margin: auto auto auto 100px;
+    margin: auto auto 20px 100px;
 } 
 
 .menu_story {
-    padding: 150px 0;
+    padding: 100px 0;
     width: 1200px;
     margin: 0 auto;
+    gap: 20px;
     text-align: center;
 }
 .menu_story .title {
@@ -83,4 +84,94 @@
 
 .menu_container {
     display: flex;
+}
+
+.menu_container .menu_pic {
+    position: relative;
+}
+
+.left .pic_title{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+
+.left .pic_title h2 {
+    font-size: 35px;
+    font-weight: 500;
+    margin: 15px 0 0 10px;
+}
+.left .pic_title p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.menu_text {
+    position: relative;
+    top: 250px;
+    line-height: 15px;
+}
+
+
+.menu_text h2 {
+    margin: 30px 0 30px 30px;
+    font-size: 32px;
+    font-weight: 700;
+    
+}
+
+.menu_text p {
+    margin: auto 0 30px 130px ;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    
+}
+
+.menu_text span {
+    margin: auto 0 30px 130px ;
+    display: inline-block;
+    font-size: 15px;
+    text-align: left;
+}
+
+
+.center_bg {
+    position: relative;
+    padding: 50px 0;
+    
+}
+
+.center_bg .center_pic img {
+   width: 100%;
+   height: 100vh;
+}
+
+
+.center_title {
+    position: absolute;
+    bottom: 500px;
+    left: 370px;
+    text-align: left;
+}
+
+.center_title h2 {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+
+.center_title p {
+    font-size: 27px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.center_title span {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
 }
