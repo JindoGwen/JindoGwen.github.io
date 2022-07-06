@@ -2,7 +2,7 @@
     position: fixed;
     top:0; 
     left:0;
-    padding: 30px;
+    line-height: 100px;
     width: 1900px;
     height: 100px;
     z-index: 999;
@@ -75,7 +75,7 @@
 .menu_story .title h2 {
     margin: 10px 0;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 900;
 }
 .menu_story .title p {
     font-size: 18px;
@@ -97,8 +97,8 @@
 }
 
 .left .pic_title h2 {
-    font-size: 35px;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 700;
     margin: 15px 0 0 10px;
 }
 .left .pic_title p {
@@ -115,14 +115,15 @@
 
 
 .menu_text h2 {
-    margin: 30px 0 30px 30px;
+    margin: 30px 0 30px 50px;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 600;
     
 }
 
 .menu_text p {
-    margin: auto 0 30px 130px ;
+    position: absolute;
+    left: 50px;
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
@@ -130,11 +131,12 @@
     
 }
 
-.menu_text span {
-    margin: auto 0 30px 130px ;
+.menu_text p>span {
     display: inline-block;
     font-size: 15px;
-    text-align: left;
+    font-weight: 400;
+    margin: 15px auto;
+    
 }
 
 
@@ -152,6 +154,8 @@
 
 .center_title {
     position: absolute;
+    width: 1200px;
+    margin: 0 auto;
     bottom: 500px;
     left: 370px;
     text-align: left;
@@ -167,11 +171,82 @@
 .center_title p {
     font-size: 27px;
     font-weight: 700;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
-.center_title span {
+.center_title p>span {
+    display: block;
+    margin: 10px 0;
     font-size: 17px;
     font-weight: 300;
     line-height: 25px;
 }
+
+
+
+
+
+.dessrt_story {
+    padding: 100px 0;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.dessrt_story .desert_content h2 {
+    margin: 0 0 15px 0;
+    font-size: 30px;
+    font-weight: 900;
+}
+.dessrt_story .desert_content p {
+    margin: 0 0 30px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+.dessrt_story .desert_slider {
+    display: flex;
+    gap: 30px;
+}
+
+.desert_text {
+    text-align: left;
+}
+
+
+.desert_text dl>dt {
+    margin: 10px 0 10px 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+.desert_text dl>dd {
+    margin: 0 0 10px 0;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
+.desert_text .text_up {
+    
+    line-height: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    
+
+}
+
+.desert_slider {
+    position: relative;
+}
+
+.desert_slider span {
+    position: absolute;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    top: 10px;
+   
+}
+
+
+
