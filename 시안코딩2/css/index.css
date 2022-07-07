@@ -1,73 +1,82 @@
 .header {
-    position: fixed;
-    top:0; 
-    left:0;
+    width: 1200px;
+    margin: 0 auto; 
     line-height: 100px;
-    width: 1900px;
-    height: 100px;
+     
+}
+.header .container {}
+
+.container h1 {
+   position: fixed;
+   margin: auto 50px;
+   top: 0;
+   left: 0;
+   z-index: 999;
+}
+
+.header .gnb {
+    position: absolute;
+    width: 1200px;
+    left: 20%;
+    margin: auto 150px;
     z-index: 999;
 }
 
-.header .container {
+.header .gnb ul {
     display: flex;
-    justify-content: space-between;
-
-}
-.header .container a {
-    margin: auto auto auto 50px;
-}
-
-.header .container .gnb {
-    position: relative;
-}
-
-.header .container ul {
-    display: flex;
-    font-size: 17px;
-    font-weight: 700;
-    gap: 30px;
-    margin: auto 300px auto auto;
-}
-
-.container .gnb i {
-    position: absolute;
-    left: 1300px;
-    bottom: 10px;
-}
-
-.main_bg .content {
-    background: url(../img/main02.jpg)no-repeat fixed;
-    padding: 500px 0;
+    gap: 50px;
     
 }
 
-.main_bg .content .main_text {
+.header .gnb ul>li {
+    font-size: 19px;
+    font-size: 900;
+    color: #fff;
+    
+}
+
+.container .side_menu {
+    position: fixed;
+    line-height: 0;
+    z-index: 999;
+    right: 80px;
+    top: 40px;
+}
+
+
+.main_bg {
+    position: relative;
+}
+
+.main_bg .main_slider figure {height: 100vh;}
+.main_bg .main_slider .itm01 { background: url(../img/main02.jpg) no-repeat center center/cover;}
+.main_bg .main_slider .itm02 { background: url(../img/main\ img.jpg) no-repeat center center/cover;}
+
+.main_bg .main_slogan {
     position: absolute;
-    top: 400px;
-    left: 350px;
+    width: 1200px;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50% ,-50%); width: 1200px; 
+    color: #fff; text-shadow: 0 0 3px #000;
+
 }
 
-.main_text h2 {
-    margin: 15px 0;
-    font-size: 50px;
-    font-weight: 500;
-    color: #fff;
-}
+.main_slogan h2 {font-size: 50px; font-weight: 600; margin: 0 0 15px 0; text-transform: uppercase;}
+.main_slogan p {font-size: 15px; font-weight: 300; line-height: 1.2;} 
 
-.main_text p {
-    font-size: 25px;
-    font-weight: 300;
-    color: #fff;
-    margin: auto auto 20px 100px;
-} 
+
 
 .menu_story {
-    padding: 100px 0;
+    padding: 80px 0;
     width: 1200px;
     margin: 0 auto;
     gap: 20px;
     text-align: center;
 }
+
+
+
 .menu_story .title {
     margin: 30px 0;
 }
@@ -183,14 +192,12 @@
 }
 
 
-
-
-
 .dessrt_story {
-    padding: 100px 0;
+    padding:70px 0 100px 0;
     width: 1200px;
     margin: 0 auto;
     text-align: center;
+    border-bottom: 3px double #191919; 
 }
 
 
@@ -206,6 +213,7 @@
 }
 .dessrt_story .desert_slider {
     display: flex;
+    
     gap: 30px;
 }
 
@@ -250,3 +258,239 @@
 
 
 
+
+.deli_story {
+    padding: 80px 0 80px 0;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    
+    border-bottom: 3px  double #191919;
+    
+}
+
+
+.deli_content h2 {
+    margin: 0 0 15px 0;
+    font-size: 30px;
+    font-weight: 900;
+}
+.deli_content p {
+    margin: 0 0 30px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+.deli_story .deli_slider {
+    display: flex;
+    
+    gap: 30px;
+}
+
+.deli_text {
+    text-align: left;
+}
+
+
+.deli_text dl>dt {
+    margin: 10px 0 10px 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+.deli_text dl>dd {
+    margin: 0 0 10px 0;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
+.deli_text .text_up {
+    
+    line-height: 15px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.deli_slider {
+    position: relative;
+}
+
+.deli_slider span {
+    position: absolute;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    top: 10px;
+   
+}
+
+.bottom_content {
+  position: relative;
+  padding: 150px 0;
+}
+
+
+.bottome_bg {
+    background: url(../img/img_brochure_1.jpg) no-repeat fixed center center/cover;
+    height: 50vh;
+    width: 100%;
+}
+
+.bottome_bg h2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    font-size: 29px;
+    font-weight: 700;
+    color: #fff;
+
+}
+
+.bottom_flex {
+   text-align: center;
+   
+}
+
+.bottom_flex  h2 {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0 0 10px 0;
+}
+.bottom_flex  p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+}
+
+
+
+.slide02 {
+   padding: 50px 0  200px 0;
+
+}
+
+.slide02 .container {
+    display: flex;
+    width: 100%;
+    margin: 0 0 0 auto;
+}
+
+
+.slide02 .container .left {
+    width: 30%;
+    overflow: hidden;
+}
+
+
+.slide02 .container .right {
+   width: 70%;
+   margin: 115px 0 0 0;
+   overflow: hidden;
+}
+
+.slide02 .container .right .right_slider {
+    width: 120%;
+    padding:  0 30px 0 0;
+}
+
+.slide02 .container .right figure {
+    padding: 0 15px;
+}
+
+
+.l_arrow i {
+    font-size: 50px;
+    padding: 20px;
+    border: 1px solid #fff;
+    color: #444;
+}
+
+
+.footer {
+    position: relative;
+    background: #000;
+    padding: 50px 0;
+     
+}
+
+.bottom_menu {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.bottom_menu ul {
+    display: flex;
+    gap: 30px;
+    
+    
+}
+
+.bottom_menu ul>li {
+    color: #fff;
+
+}
+
+.bottom_info {
+    position: relative;
+    width: 1200px;
+    margin: 20px auto;
+}
+
+.bottom_info ul {
+    display: flex;
+    gap: 30px;
+    font-weight: 400;
+  
+}
+
+.bottom_info ul>li~li::before {
+    content: "";
+    display:inline-block;
+    height: 12px;
+    width: 1px;
+    background-color: #444;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.bottom_address {
+    width: 1200px;
+    margin: 0 auto 10px auto;
+}
+
+.bottom_address ul {
+    display: flex;
+    gap: 20px;
+}
+
+.bottom_copy {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.bottom_icon {
+    position: absolute;
+    right: 10%;
+    bottom: 50px;
+    font-size: 20px;
+    padding: 1px 2px;
+}
+
+.bottom_icon a {
+    border-radius: 15%;
+}
+
+.bottom_icon a:nth-child(1) {
+    background: rgb(83, 73, 230);
+    color: #000;
+
+}
+.bottom_icon a:nth-child(2) {
+    background: rgb(226, 213, 96);
+    color: #000;
+}
+.bottom_icon a:nth-child(3) {
+    background: rgb(53, 187, 221);
+    color: #000;
+}

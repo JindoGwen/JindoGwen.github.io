@@ -16,6 +16,7 @@ $(function(){
     });
 
 
+    
     $('.slide01 .slide_arrows i:nth-child(1)').on('click' , function (){
         $('.main_slider').slick('slickPrev')
         
