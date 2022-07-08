@@ -1,3 +1,4 @@
+
 .header {
     width: 1200px;
     margin: 0 auto; 
@@ -48,7 +49,7 @@
     position: relative;
 }
 
-.main_bg .main_slider figure {height: 100vh;}
+.main_bg .main_slider figure { height: 100vh;}
 .main_bg .main_slider .itm01 { background: url(../img/main02.jpg) no-repeat center center/cover;}
 .main_bg .main_slider .itm02 { background: url(../img/main\ img.jpg) no-repeat center center/cover;}
 
@@ -475,22 +476,12 @@
     bottom: 50px;
     font-size: 20px;
     padding: 1px 2px;
+    
+   
 }
 
 .bottom_icon a {
     border-radius: 15%;
-}
-
-.bottom_icon a:nth-child(1) {
-    background: rgb(83, 73, 230);
-    color: #000;
-
-}
-.bottom_icon a:nth-child(2) {
-    background: rgb(226, 213, 96);
-    color: #000;
-}
-.bottom_icon a:nth-child(3) {
-    background: rgb(53, 187, 221);
-    color: #000;
+    background: #444;
+    color: #fff;
 }
