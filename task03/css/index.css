@@ -1,0 +1,51 @@
+.header {
+    width: 100%;
+    line-height: 100px; 
+}
+
+.container h1 {
+    width: 100px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 50px;
+}
+
+.container .gnb {
+   position: absolute;
+   left: 38%;
+}
+
+.container .gnb ul{
+    display: flex;
+    gap: 30px;
+}
+
+.container .gnb ul>li {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container .header_search  {
+    position: relative; 
+    left: 39%; 
+}
+
+.header_search input {
+    border-radius: 50px;
+    background: #fff;
+    border: 1px solid#b9b3b3;
+}
+.container .header_search  .input_icon {
+    position: absolute;
+    top: 3px;
+    left: 80%;
+    font-size: 20px;
+}
+
+.header_icon {
+    font-size: 23px;
+
+}
