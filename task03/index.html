@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="../task03/css/reset.css">
     <link rel="stylesheet" href="../task03/css/slick.css">
+    <link rel="stylesheet" href="../task03/css/jquery.mb.YTPlayer.css">
+    <link rel="stylesheet" href="../task03/css/hamburgers.min.css">
     <link rel="stylesheet" href="../task03/css/index.css">
 </head>
 <body>
@@ -43,10 +45,25 @@
             </a>
         </div>
     </div>
-
+    <div class="mopen">
+        <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>  
  </header>
  <!--main 시작-->
  <main class="main">
+    <!-- main section 01 -->
+    <section class="main_video">
+        <div  id="bgndVideo" class="player"></div>
+        <div class="control">
+            <i class="xi-pause"></i>
+            <i class="xi-play"></i>
+            <i class="xi-bell-off-o"></i>
+       </div>
+
+    </section>
 
  </main>
  <footer class="footer">
@@ -58,6 +75,7 @@
 
     <script src="../task03/js/jquery-1.12.4.min.js"></script>
     <script src="../task03/js/slick.min.js"></script>
+    <script src="../task03/js/jquery.mb.YTPlayer.min.js"></script>
     <script src="../task03/js/index.js"></script>
 </body>
 </html>
