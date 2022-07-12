@@ -25,8 +25,7 @@
  .header { width: 100%; line-height: 100px; } 
  .container h1 { width: 100px; position: fixed; z-index: 999; } 
  .header .container { display: flex; justify-content: space-between; margin: auto 50px; } 
- .container .gnb { position: fixed; left: -100%; transition: 0.5s; text-align: center; 
-   height: 100vh; width: calc(100% - 90px); background: #fff; z-index: 999; border-right: 1px solid#000;} 
+ .container .gnb { position: fixed; left: -100%; transition: 0.5s; text-align: center; height: 100vh; width: calc(100% - 90px); background: #fff; z-index: 999; border-right: 1px solid#000; } 
  .container .gnb ul { display: flex; flex-direction: column; gap: 30px; } 
  .container .gnb ul>li { font-size: 18px; font-weight: 400; border-bottom: 1px solid#ddd; border-right: 1px solid #ddd; } 
  .container .header_search { display: none; position: relative; left: 39%; } 
@@ -60,7 +59,7 @@
  .main_title { width: 100%; text-align: center; padding: 50px; } 
  .main_title h2 { font-size: 50px; font-weight:800; margin: 20px 0; } 
  }
-@media(max-width:560px){
+@media(max-width:660px){
  .main_title { width: 560px; padding-left: 5px; } 
  }
 
@@ -70,22 +69,61 @@
 
  .mobile_size { display: none; } 
 
- .main_product h2 { margin: 20px 0; font-size: 30px; font-weight: 600; } 
+ .main_product h2 { margin: 70px 0 30px 0; font-size: 30px; font-weight: 600; } 
 
  .main_product p { font-size: 17px; letter-spacing: -1px; line-height: 19px; } 
 
- .main_product .sports_ad a { width: 100px; display:inline-block; margin: 15px 0; font-size: 15px; font-weight: 300; padding: 10px; color: #fff; border-radius: 50px; background: #000;
- }
+ .main_product .sports_ad a { width: 100px; display:inline-block; margin: 15px 0; font-size: 15px; font-weight: 300; padding: 10px; color: #fff; border-radius: 50px; background: #000; } 
 
-  /*main section03  -respansive*/
- @media(max-width:560px){
+ /*main section03 -respansive*/
+ @media(max-width:660px){
  .main_product { width: auto; padding: 30px 0; text-align: left; margin: auto 20px; } 
 
  .main_product .ad_pic { display: none; } 
- .main_product p { font-size: 17px; letter-spacing: -1px; }
+ .main_product p { font-size: 17px; letter-spacing: -1px; } 
  .ad_text { margin: auto 20px; } 
 
  .mobile_size { display: block; } 
  .main_product .sports_ad a { margin: 15px; text-align: center; font-weight: 500; } 
+}
 
+
+ /*main section04 css*/
+ .slider_item { padding: 30px;}
+ .slider_item h2 { margin: 10px 20px; font-size: 20px; font-weight: 700; } 
+ .slider_item { position: relative;}
+ .slick-slide { margin: 0 20px; } 
+
+ .slider_shoes .slick-dots { position: absolute; bottom: -3%; left: 17%; }
+
+ .slider_shoes .slick-dots li { display: inline-block; width: 400px; height: 3px; background: #ddd; margin: 0 2px; } 
+
+ .slider_shoes .slick-dots li::after { content: ""; display: block; width: 0; height: 100%; background: #000; transition: 3s; } 
+
+.main .slick-dots li.slick-active::after { width: 100%; transition: 3s; }
+
+.slick-dots li:nth-child(4) { display: none; } 
+.slick-dots li:nth-child(5) { display: none; } 
+
+.slick-dots li button { display: none; } 
+ 
+.slider_icon i { display: none; position: absolute; top: 50%; left: 50%; font-size: 40px; background: #000; color: #fff; border-radius: 50px;}
+
+ .slider_item:hover .slider_icon i { display: block; 
+}
+ 
+ .slider_icon i:nth-child(1) { margin: 0 0 0 650px; }
+ .slider_icon i:nth-child(2) { margin: 0 0 0 -650px; } 
+
+ .slider_shoes dl { text-align: center; margin: 10px 0; } 
+
+ .slider_shoes dt { margin: 10px 0; font-size: 17px; font-weight: 500;}
+
+ .slider_shoes .mid_dd { margin: 0 0 8px 0; font-size: 16px; text-align: 400;}
+/*main section04 -respansive*/
+ @media(max-width:1530px){
+   .slider_shoes .slick-dots li,
+   .slider_shoes .slick-dots li::after {
+        display: none;
+    }
  }

@@ -23,6 +23,25 @@ $('.main_video i:nth-child(1)').on('click', function(){
         $(this).toggleClass('is-active');
         $('.gnb').toggleClass('on')
     })
+  
+  $('.slider_shoes').slick({
+      slidesToShow:3,
+      infinite: true,
+      dots: true,
+      arrows:false,
+  })
+
+$(' .slider_icon i:nth-child(1)').on('click' , function (){
+    $('.slider_shoes').slick('slickNext')
+    
+});
+$(' .slider_icon i:nth-child(2)').on('click' , function (){
+    $('.slider_shoes').slick('slickPrev')
+    
+});
+
+
+
 })
 
 
