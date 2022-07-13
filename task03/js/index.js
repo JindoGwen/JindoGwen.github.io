@@ -45,9 +45,33 @@ $('.moblie_only_shose').slick({
   pasueOnHover: false,
   pasueOnFocus: false,
   
-
-
 })
+
+$(' .ms_slider_icon i:nth-child(1)').on('click' , function (){
+  $('.moblie_only_shose').slick('slickNext')
+  
+});
+$('.ms_slider_icon i:nth-child(2)').on('click' , function (){
+  $('.moblie_only_shose').slick('slickPrev')
+  
+});
+
+
+$('.m_flex_container').slick({
+  arrows:false,
+  pasueOnHover: false,
+  pasueOnFocus: false,
+  
+})
+
+$(' .m_slider_icon i:nth-child(1)').on('click' , function (){
+  $('.m_flex_container').slick('slickNext')
+  
+});
+$('.m_slider_icon i:nth-child(2)').on('click' , function (){
+  $('.m_flex_container').slick('slickPrev')
+  
+});
 
 
 
