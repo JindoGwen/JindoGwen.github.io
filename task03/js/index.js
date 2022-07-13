@@ -40,9 +40,19 @@ $(' .slider_icon i:nth-child(2)').on('click' , function (){
     
 });
 
+$('.moblie_only_shose').slick({
+  arrows:false,
+  pasueOnHover: false,
+  pasueOnFocus: false,
+  
 
 
 })
+
+
+
+})
+
 
 
 

@@ -60,7 +60,7 @@
  .main_title h2 { font-size: 50px; font-weight:800; margin: 20px 0; } 
  }
 @media(max-width:660px){
- .main_title { width: 560px; padding-left: 5px; } 
+ .main_title {position: relative; right: 25px;  width: 560px; padding-left: 20px; text-align: center;  } 
  }
 
  /*main section03 css*/
@@ -80,9 +80,9 @@
  .main_product { width: auto; padding: 30px 0; text-align: left; margin: auto 20px; } 
 
  .main_product .ad_pic { display: none; } 
- .main_product p { font-size: 17px; letter-spacing: -1px; } 
+ .main_product p { font-size: 17px; font-weight: 400; letter-spacing: -1px; line-height: 25px; } 
  .ad_text { margin: auto 20px; } 
-
+ .pc_only {display: none;}
  .mobile_size { display: block; } 
  .main_product .sports_ad a { margin: 15px; text-align: center; font-weight: 500; } 
 }
@@ -120,10 +120,26 @@
  .slider_shoes dt { margin: 10px 0; font-size: 17px; font-weight: 500;}
 
  .slider_shoes .mid_dd { margin: 0 0 8px 0; font-size: 16px; text-align: 400;}
+
+ .moble_slider {display: none;}
+
+
 /*main section04 -respansive*/
  @media(max-width:1530px){
    .slider_shoes .slick-dots li,
    .slider_shoes .slick-dots li::after {
         display: none;
     }
+  
+    
  }
+
+ @media(max-width:660px){
+  .slider_shoes {display: none;}
+  .moble_slider  {display: block; position: relative;}
+  .moble_slider img {border-radius: 25px;}
+  .moblie_only_shose dl { text-align: center; margin: 10px 0; } 
+  .moblie_only_shose dt { margin: 10px 0; font-size: 17px; font-weight: 500;}
+  .moblie_only_shose .mid_dd { margin: 0 0 8px 0; font-size: 16px; text-align: 400;}
+ }
+ 
