@@ -5,6 +5,9 @@ $("#bgndVideo").YTPlayer({
     mute:true,
     showControls: false,
     playOnlyIfVisible: true,
+    useOnMobile: true,
+    stopMovieOnBlur: false,
+   
 });
 
 $('.main_video i:nth-child(1)').on('click', function(){
@@ -73,11 +76,13 @@ $('.m_slider_icon i:nth-child(2)').on('click' , function (){
   
 });
 
-
-
 })
 
-
+$(function(){
+  $('.QA_code').click(function(){
+    $('.QA_img').toggle();
+  });
+})
 
 
 
