@@ -309,15 +309,23 @@
 
 .rest_show { padding: 100px 0 50px 0; } 
  
- .rest_show .rest_bg { background: url(/task03/img/다운로드.png) fixed no-repeat; background-position: center; background-size: cover; width: 100%; height: 50vh; } 
+ .rest_show .rest_bg { background: url(/task03/img/QbYKeN.webp) fixed no-repeat; background-position: center; background-size: cover; width: 100%; height: 50vh; } 
  
- .rest_show h2 { position: relative; top: 40%; left: 5%; font-size: 90px; color: #fff; font-weight: 500; } 
+ .rest_show h2 { position: relative; top: 40%; left: 10%; font-size: 50px; color: #fff; font-weight: 500; } 
 
 
  @media(max-width:1290px){
+
+   .rest_show {
+      padding: 0;
+   }
    .rest_show h2 {
       font-size: 45px;
       left: 10%;
+   }
+   .rest_show .rest_bg {
+      background-position: left;
+      background-size: 120%;
    }
  }
 
