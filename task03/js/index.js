@@ -84,6 +84,22 @@ $(function(){
   });
 })
 
+$('.respansive_box').slick({
+  arrows:false,
+  pasueOnHover: false,
+  pasueOnFocus: false,
+
+})
+
+$(' .m_respansive_icon i:nth-child(1)').on('click' , function (){
+  $('.respansive_box').slick('slickNext')
+  
+});
+$('.m_respansive_icon i:nth-child(2)').on('click' , function (){
+  $('.respansive_box').slick('slickPrev')
+  
+});
+
 
 
 
