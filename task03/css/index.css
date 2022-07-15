@@ -253,8 +253,7 @@
 
 .QA_img { display: none; position: absolute; top: 23%; left: 16.5%; } 
 
- .bottom_img { position: absolute; right: 28.7%; bottom: 0; 
-}
+ .bottom_img { position: absolute; right: 28.7%; bottom: 0; } 
 
  .bottom_img img { border-radius: 15px; height: 250px; width: 400px; } 
 
@@ -262,71 +261,117 @@
 
  .ntc_bottom_text:hover { background: #000; color: #ddd; } 
 
- .bottom_M_img { position: absolute; top: 64.2%; bottom:0%; right: 2.6%; }
- .bottom_M_img a { position: absolute; bottom:5%; left: 4%; font-size: 15px; background: #fff; padding: 10px; border-radius: 15px;}
+ .bottom_M_img { position: absolute; top: 64.2%; bottom:0%; right: 2.6%; } 
+ .bottom_M_img a { position: absolute; bottom:5%; left: 4%; font-size: 15px; background: #fff; padding: 10px; border-radius: 15px; } 
 
  .bottom_M_img a:hover { background: #000; color: #ddd; } 
 
  .bottom_M_img img { height: 250px; border-radius: 20px; } 
 
-  /*main section07 - repansive*/
+ /*main section07 - repansive*/
 
-  @media(max-width:1290px) {
-    .ad_line {display: none;}
-   }
-  
-
+ @media(max-width:1290px){
+ .ad_line { display: none; } 
+ }
+ 
 
 /*section08 */
 
-.rest_show  {
-    padding: 100px 0;
-   }
-  
-   .rest_show .rest_bg {
-    background: url(/task03/img/다운로드.png) fixed no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 50vh;
-    
-  
-   }
-  
+.rest_show { padding: 100px 0 50px 0; } 
+ 
+ .rest_show .rest_bg { background: url(/task03/img/다운로드.png) fixed no-repeat; background-position: center; background-size: cover; width: 100%; height: 50vh; } 
+ 
+ .rest_show h2 { position: relative; top: 40%; left: 5%; font-size: 90px; color: #fff; font-weight: 500; } 
+
+
+ @media(max-width:1290px){
    .rest_show h2 {
-    position: relative;
-    top: 40%;
-    left: 5%;
-    font-size: 90px;
-    color: #fff;
-    font-weight: 500;
+      font-size: 45px;
+      left: 10%;
    }
+ }
 
 
-    /*main section09 */ 
+ @media(max-width:767px) {
+   .rest_show h2 {
+      font-size: 25px;
+      left: 5%;
+   }
+ }
 
 
- .last_main {
-    padding: 50px 50px;
+
+ /*main section09 */ 
+
+
+ .last_main { padding: 50px 50px; } 
+ 
+ .last_container h2 { margin: 10px 0; font-size: 20px; font-weight: 700; } 
+ 
+ .container_box { display: flex; gap: 10px; } 
+ 
+ .container_box .box_text { margin: 10px 0; } 
+ 
+ .box_text dl>dt { margin: 0 0 10px 0; font-size: 20px; } 
+ 
+ @media(max-width:767px) {
+   .container_box {
+      flex-direction: column;
    }
-  
-   .last_container h2 {
-    margin: 10px 0; font-size: 20px; font-weight: 700;
-  
-   }
-  
-   .container_box  {
-    display: flex;
-    gap: 10px;
-    
-   }
-  
-   .container_box  .box_text {
-    margin: 10px 0; 
-   }
-  
-   .box_text dl>dt {
-    margin: 0 0 10px 0;
-    font-size: 20px;
-   }
-  
+ }
+
+
+ /*footer*/
+
+ .footer { background: #000;  padding: 50px 0;} 
+
+ .footer_menu { width: 1200px; margin: 0 auto; } 
+
+.footer_menu ul { display: flex; gap: 30px; 
+ }
+
+.footer_menu ul>li { color: #fff;}
+
+.footer_info { position: relative; width: 1200px; margin: 20px auto; } 
+
+.footer_info ul { display: flex; gap: 30px; font-weight: 400; color: #b8aeae; }
+
+.footer_info ul>li~li::before { content: ""; display:inline-block; height: 12px; width: 1px; background-color: #f1f1f1; margin-left: 12px; margin-right: 12px; } 
+
+.footer_address { width: 1200px; margin: 0 auto 10px auto; } 
+
+.footer_address ul { display: flex; gap: 20px; color: #b8aeae; } 
+
+.footer_copy { width: 1200px; margin: 0 auto; color: #b8aeae; } 
+
+
+
+
+
+
+
+
+
+ @media(max-width:1290px){
+ .footer { background: #000; font-size: 5px; } 
+
+.footer_menu { width: 100%; margin: 0 auto; } 
+
+.footer_menu ul { display: flex; gap: 30px; 
+ }
+
+.footer_menu ul>li { color: #fff;}
+
+.footer_info { position: relative; width: 100%; margin: 20px auto; } 
+
+.footer_info ul { display: flex; gap: 30px; font-weight: 400; }
+
+.footer_info ul>li~li::before { content: ""; display:inline-block; height: 12px; width: 1px; background-color: #444; margin-left: 12px; margin-right: 12px; } 
+
+.footer_address { width: 100%; margin: 0 auto 10px auto; } 
+
+.footer_address ul { display: flex; gap: 20px; } 
+
+.footer_copy { width: 100%; margin: 0 auto; } 
+
+ }
