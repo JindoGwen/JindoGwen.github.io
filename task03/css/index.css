@@ -23,7 +23,7 @@
 /* header, section01 - respansive */
 @media(max-width:1200px){
  .header { width:100%; line-height: 100px; } 
- .container h1 { width: 100px; position: fixed; z-index: 999; } 
+ .container h1 { width: 80px; position: fixed; z-index: 999; left: 15px;} 
  .header .container { display: flex; justify-content: space-between; margin: auto 50px; } 
  .container .gnb { position: fixed; left: -100%;   transition: 0.5s; text-align: left; height: 100vh; width: calc(100% - 90px); background: #fff; z-index: 999; border-right: 1px solid#000; } 
  .container .gnb ul { display: flex; flex-direction: column; gap: 30px; } 
