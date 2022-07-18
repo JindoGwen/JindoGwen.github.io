@@ -1,0 +1,34 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background: #000000;
+    background-size: cover;
+    height: 70px;
+
+}
+
+.header_container h1 {
+    opacity: 1;
+}
+
+.header_container img {
+    width: 180px;
+}
+
+.header_container {
+    display: flex;
+    font-size: 17px;
+    color: #fff;
+    
+}
+.gnb {
+
+    padding: 25px;
+}
+
+.header_container ul {
+
+    display: flex;
+    gap: 30px;
+    
+}
