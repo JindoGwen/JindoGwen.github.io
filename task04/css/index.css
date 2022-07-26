@@ -138,7 +138,7 @@
 
 /*main section03 */
 
-.main_news { padding: 50px 0 90px 0; width: 1200px; margin: 0 auto; } 
+.main_news { padding: 50px 0 20px 0; width: 1200px; margin: 0 auto; } 
 
 .news_container h2 { margin: 20px 0; font-size: 25px; font-weight: 500; } 
 
@@ -168,29 +168,20 @@
 
  /*main section04
 
- .main_banner {
-    background: url(../img/01-logo-poster-2012-present.jpg) no-repeat fixed;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    position: sticky;
-    top: 0;
+ .display_boxes {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    
  }
 
- .banner_boxes figure{
-   position: sticky;
-   top: 0;
-     
+ .display_movies figure {
+    margin: auto 30px;
+  
  }
+  
+*/
 
- .banner_boxes .boxes_left {
-  float: left;
- }
-
- .banner_boxes .boxes_right {
-    float: right;
- }
- */
  
 
  /* section05 */
@@ -262,3 +253,9 @@ margin: 20px 0;}
     margin: auto 30px;
 }
 
+
+.display_boxes {
+    position: sticky;
+    top: 0;
+    padding: 100px 0;
+}

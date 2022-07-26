@@ -47,6 +47,28 @@ $('.Mslider_icon i:nth-child(2)').on('click', function(){
 
 
 
+$('.display_movies').slick({
+    arrows: false,
+    autoplay: false,
+    pasueOnHover: false,
+    pasueOnFocus: false,
+    slidesToShow:5,
+    autoplaySpeed:4000,
+    dots:true,
+    Responsive:[
+        {
+            breakpoint:1200,
+            settings:{
+                autoplay:true,
+                autoplaySpeed:4000,
+            }
+        }
+    ]
+
+});
+
+
+
 })
 
 
