@@ -1,4 +1,6 @@
 $(function(){
+
+
     $('.hamburger').on('click',function(){
         $(this).toggleClass('is-active');
         $('.m_smenu').toggleClass('on')
@@ -44,30 +46,6 @@ $('.Mslider_icon i:nth-child(1)').on('click', function(){
 $('.Mslider_icon i:nth-child(2)').on('click', function(){
     $('.mboxes_slider').slick('slickNext');
 })
-
-
-
-$('.display_movies').slick({
-    arrows: false,
-    autoplay: false,
-    pasueOnHover: false,
-    pasueOnFocus: false,
-    slidesToShow:5,
-    autoplaySpeed:4000,
-    dots:true,
-    Responsive:[
-        {
-            breakpoint:1200,
-            settings:{
-                autoplay:true,
-                autoplaySpeed:4000,
-            }
-        }
-    ]
-
-});
-
-
 
 })
 
