@@ -65,14 +65,12 @@ $('.Tslider_icon i:nth-child(2)').on('click', function(){
 })
 
 
+$('.Mpictures_box').slick({
+    arrows: false,
+    autoplay: true,
+    pasueOnHover: false,
+    pasueOnFocus: false,
+    autoplaySpeed:2000,
+})
 
-$("#bgndVideo").YTPlayer({
-    videoURL:'https://youtu.be/_eT49Xs9yMk',
-    containment:'.trial_video',
-    //autoPlay:true,
-    mute:true,
-    showControls: false,
-    playOnlyIfVisible: true,
-    stopMovieOnBlur: false,
-   
-});
+
