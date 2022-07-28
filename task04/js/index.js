@@ -49,4 +49,30 @@ $('.Mslider_icon i:nth-child(2)').on('click', function(){
 
 })
 
+$('.theme_slider').slick({
+        arrows: false,
+        autoplay: false,
+        pasueOnHover: false,
+        pasueOnFocus: false,
+})
 
+
+$('.Tslider_icon i:nth-child(1)').on('click', function(){
+    $('.theme_slider').slick('slickPrev');
+})
+$('.Tslider_icon i:nth-child(2)').on('click', function(){
+    $('.theme_slider').slick('slickNext');
+})
+
+
+
+$("#bgndVideo").YTPlayer({
+    videoURL:'https://youtu.be/_eT49Xs9yMk',
+    containment:'.trial_video',
+    //autoPlay:true,
+    mute:true,
+    showControls: false,
+    playOnlyIfVisible: true,
+    stopMovieOnBlur: false,
+   
+});

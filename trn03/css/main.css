@@ -1,0 +1,76 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    display: flex;
+    width: 120rem;
+    margin: 0 auto;
+}
+
+
+
+
+.TopBanner {
+    background: #f8f8f8;
+    padding: 3rem 0 3rem 0;
+}
+
+.TopBanner .container {
+    position: relative;
+    display: block;
+}
+
+.TopBanner h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+}
+
+.TopBanner p {
+    font-size: 1.3rem;
+}
+
+.TopBanner a {
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 4px 2rem 6px 2rem;
+    transform: translateY(-2px);
+    margin: 0 0 0 2rem;
+}
+
+.TopBanner i {
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+}
+
+
+.header {
+    line-height: 10rem;
+}
+
+.header h1 {
+    font-size: 0;
+}
+
+.gnb {
+    margin: 0 0 0 auto;
+}
+
+.gnb>ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.gnb a {
+    display: block;
+}
+
+#searchForm {
+    margin: 0 0 0 2rem;
+}
