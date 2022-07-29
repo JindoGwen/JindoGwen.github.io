@@ -723,8 +723,12 @@
 
    .Mobile_pictures{
       display: block;
-      margin: auto 35px auto 35px;
+      margin: auto  auto ;
       text-align: center;
+   }
+
+   .Mobile_pictures img {
+      width: 100%;
    }
    .Mpictures_box figure>p {
       margin: 10px 0;
