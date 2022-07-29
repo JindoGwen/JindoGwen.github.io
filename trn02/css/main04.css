@@ -1,3 +1,20 @@
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    display: flex;
+    width: 120rem;
+    margin: 0 auto;
+}
+
+
+
 .container {
     width: 1200px;
     display: flex;
@@ -65,16 +82,17 @@
     font-size: 2rem;
 }
 
+/* 선만들기 css 
 h5 {
     display: flex;
-    align-items: center; /*선을 가운데로*/
+    align-items: center; 
 }
 
 
 h5::after {
     content: '';
     display: block;
-    flex: 1; /*선을 가운데로*/
+    flex: 1; 
     height: 1px;
     background: #f00;
     margin: 0 0 0 20px;
@@ -88,7 +106,7 @@ h6 {
 h6::before {
     content: '';
     display: block;
-    flex: 1; /*선을 가운데로*/
+    flex: 1; 
     height: 1px;
     background: #f00;
     margin: 0 20px 0 0;
@@ -97,9 +115,60 @@ h6::before {
 h6::after {
     content: '';
     display: block;
-    flex: 1; /*선을 가운데로*/
+    flex: 1; 
     height: 1px;
     background: #f00;
     margin: 0 0 0 20px;
 
+}*/
+
+
+.main_visual {position: relative;}
+
+.main_visual .main_slider figure{
+      height: 600px;/*60rem*/
 }
+
+.main_visual .itm01 {
+    background: url(../img/mainvisual01.jpg) no-repeat center center/cover;
+}
+.main_visual .itm02 {
+    background: url(../img/mainvisual02.jpg) no-repeat center center/cover;
+}
+.main_visual .itm03 {
+    background: url(../img/mainvisual03.jpg) no-repeat center center/cover;
+}
+.main_visual .itm04 {
+    background: url(../img/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .slogan {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    margin: 0 0 1.2rem;
+
+}
+
+.main_visual .slogan h2 {
+    font-size: 5rem;
+    font-weight: 900;
+    text-shadow: 0 0 3px #000;
+    margin: 0 0 1.2rem 0;
+    text-indent: -2px;/*글자가 커지면서 길이가 안맞을때*/
+}
+.main_visual .slogan p {
+    font-size: 1.5rem;
+    text-shadow: 0 0 3px #000;
+}
+.main_slider .slick-dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
