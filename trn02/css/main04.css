@@ -22,7 +22,7 @@ body {
 }
 
 .header {
-    line-height: 5rem;
+    line-height: 10rem;
   
 }
 
@@ -166,9 +166,38 @@ h6::after {
 }
 .main_slider .slick-dots {
     position: absolute;
-    bottom: 1rem;
+    bottom: 5rem;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.main_slider .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+    height: 0.4rem;
+    background: #333;
+    border-radius: 0.2rem;
+    margin: 0 0.2rem;
+    overflow: hidden;
+}
+
+.main_slider .slick-dots li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+}
+
+.main_slider .slick-dots li.slick-active::after {
+    width: 100%;
+    transition: 2s;
+}
+.main_slider .slick-dots button {
+    display: none;
 }
 
 
