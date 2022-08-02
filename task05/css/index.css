@@ -51,7 +51,9 @@
 .lineIcon { position: absolute; top: 45%; left: 78%; color: #ffff; border: 1px solid #d89797; padding: 10px; }
 .lineIcon:hover { background: #000000; } 
 
-/* section03 */ 
+/* section03 */
+
+/* section04 */ 
 .divice {
     padding: 100px 0;
 }
@@ -69,5 +71,10 @@
 .divceHand .right {
     position: absolute;
     right: -20%;
+}
+
+.diviceContent {
+    width: 500px;
+    height: 50vh;
 }
 
