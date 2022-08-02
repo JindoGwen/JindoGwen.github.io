@@ -56,8 +56,7 @@
 .lineIcon:hover { background: #000000; } 
 
 /* section03 */
-.recentNews { width: 1200px; margin: 0 auto; padding: 50px 0 150px 0; 
- }
+.recentNews { width: 1200px; margin: 0 auto; padding: 50px 0 150px 0; } 
 .recentNews h2 { margin: 30px auto; text-align: center; font-size: 30px; font-weight: 500; } 
 .recentNews figure .img { width: 276px; height: 160px; } 
 .newsContainer { display: flex; gap: 30px; margin: auto 0 30px 0; } 
@@ -69,38 +68,45 @@
 .bottomNewsContainer dl>dt { margin: 10px 0; } 
 .bottomNewsContainer dl>dd { margin: 0 0 10px 0; font-size: 18px; font-weight: 500; line-height: 20px; overflow: hidden; } 
 .bottomNewsContainer p { margin: 10px 0; font-size: 13px; line-height: 20px; } 
-.middleImg {
-    position: absolute;
-    bottom: -110%;
-    left: 50%;
-    transform: translateX(-50%);
-}
+.middleImg { position: absolute; bottom: -110%; left: 50%; transform: translateX(-50%); } 
 
 /* section04 */ 
-.divice { padding: 120px 0 50px 0; text-align: center;} 
+.divice { padding: 120px 0; text-align: center; } 
 .diviceContainer { position: relative; } 
 
-.diviceText h2 {
-    margin:0 0 30px 0;
-    font-size: 50px;
-    font-weight: 600;
-
-}
-.diviceText p {
-    font-size: 25px;
-    line-height: 35px;
-}
+.diviceText h2 { margin:0 0 30px 0; font-size: 50px; font-weight: 600;}
+.diviceText p { font-size: 25px; line-height: 35px; } 
 
 .divceHand { position: relative; z-index: 999; } 
 
-
 .divceHand .left { position: absolute; top: 180px; left: -20%; } 
-.divceHand .right { position: absolute;top: 180px; right: -20%; } 
+.divceHand .right { position: absolute; top: 180px; right: -20%; } 
 
+.diviceContent { position: absolute; bottom: -170%; } 
+iframe { position: absolute; top: 142%; left: 35%; width: 555px; height: 315px; z-index: 999; } 
 
-.diviceContent { position: absolute; bottom: -170%; z-index: -999;}
-iframe { position: absolute; top: 143%; left: 35.1%;
-     width: 557px; height: 310px; z-index: 999; } 
+/* section05 */
+.manual {
+    position: relative;
+    padding: 400px 0 0 0;
+}
+.manualContianer {
+   
+}
+.manualText {
+position: absolute;
+top: 30%;
+right: -60%;
+width: 100%;
+color: #ffff;
 
-
-
+}
+.manualText  h2 {
+    padding: 30px;
+    background: red;
+    font-size: 25px;
+}
+.manualText p {
+    padding: 15px;
+    color: #000000;
+}
