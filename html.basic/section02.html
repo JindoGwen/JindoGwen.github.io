@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>section02 </title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+      .container {
+        display: flex;
+        width: 1170px;
+        margin: 0 auto;
+      }
+      .t_b {
+            color:#0d6efd ;
+        }
+    .dotList li {
+            position: relative;
+            padding: 0 0 0 20px;
+            line-height: 1.2;
+            margin: 0 0 5px 0;
+        }   
+    .dotList li::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 2px;
+        height: 2px;
+        background: #0d6efd;
+
+    }
+    .Buiness {
+        padding: 100px 0;
+        
+    }
+
+    .Buiness h2 {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+      }
+    .Buiness h2::after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #0d6efd;
+        margin: 15px auto;
+      }
+
+    .Buiness>p {
+        margin: 0 0 50px 0;
+        font-weight: 300;
+        
+        text-align: center;
+      }
+
+    .Buiness .container img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    
+    .Buiness figure {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+    }
+    .Buiness figure~figure {
+        border-left: 1px solid transparent;
+    }
+    
+
+    .Buiness figure .cover {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;  /* cover a 가 flex로 넓게 펼쳐진걸 글자 크기에 맞추기 위해 사용 */
+        background: rgba(0,0,0,0.75);
+        transition: left 0.5s;
+        color: #fff;
+        padding: 40px 10px;   /* 포지션으로 자리를 잡지 말고 패딩으로 잡아라*/
+
+    }
+
+    .Buiness figure:hover .cover {
+        left: 0;
+    }
+    .Buiness figure h3 {
+     align-self: stretch;
+     font-size: 21px;
+     font-weight: 500;
+     padding: 0 0 20px 0;
+     margin: 0 0 20px 0;
+     border-bottom:1px solid rgba(255,255,255,0.5);  
+    }
+    .Buiness figure p {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.25;
+    }
+    .Buiness figure .cover a {
+        flex-grow: 0;
+      /*  display: inline-block; */
+        border: 1px solid rgba(255,255,255,0.5);
+        padding: 10px 15px;
+        margin-top: auto;
+    }
+    
+   /* .Buiness figure:hover .cover { 
+          left: -120px;
+    } 
+
+  /*  .Buiness figure:hover .inbox {
+        transition: 0.5s 0.3s;
+    }
+    .Buiness figure:hover .inbox {
+        transform: translateX(100px);
+    } */
+
+    .Buiness .inner {
+        width: 1200px;
+        margin: 0 auto;
+       
+     }
+    .Buiness .inner::after {
+        content: "";
+        
+    }
+    .Buiness .inner>div {
+        float: left;
+        width: 50%;
+        padding: 0 15px;
+    }
+    .Buiness .container {
+        margin: 0 auto 100px auto;
+    }
+
+    .Buiness .tit strong {
+        position: relative;
+        display: block;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0 0 20px 0;
+        padding: 0 0 0 20px;
+    }
+
+    .Buiness .tit p {
+        font-size: 15px;
+        font-weight: 300;
+        padding:  0 0 0 20px;
+    }
+    .Buiness .tit strong::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 80px;
+        background: #0d6efd;
+    }
+
+    </style>
+</head>
+<body>
+    <section class="Buiness">
+        <h2> <span class="t_b">our</span>business</h2>
+        <p>새로운 미래를 열어가는 우투더영투더우</p>
+        <div class="container">
+            <figure>
+                <div class="inbox">
+                    <img src="./img/06.jpg" alt="">
+                </div>
+                <div class="cover">
+                   <h3>주요사업 1</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, assumenda!</p>
+
+                   <a href="">자세히보기</a>
+                </div>
+            </figure>
+            <figure>
+                <div class="inbox">
+                    <img src="./img/03.jpg" alt="">
+                </div>
+                <div class="cover">
+                   <h3>주요사업 1</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, assumenda!</p>
+
+                   <a href="">자세히보기</a>
+                </div>
+            </figure>
+            <figure>
+                <div class="inbox">
+                    <img src="./img/02.jpg" alt="">
+                </div>
+                <div class="cover">
+                   <h3>주요사업 1</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, assumenda!</p>
+
+                   <a href="">자세히보기</a>
+                </div>
+            </figure>
+            <figure>
+                <div class="inbox">
+                    <img src="./img/01.jpg" alt="">
+                </div>
+                <div class="cover">
+                   <h3>주요사업 1</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, assumenda!</p>
+
+                   <a href="">자세히보기</a>
+                </div>
+            </figure>
+        </div>
+        <div class="inner">
+            <div class="tit">
+                <strong>심플하지만 다 갖춘 영투더우투더우</strong>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur optio hic tenetur alias molestiae quos!</p> 
+           </div>
+           <div class="list">
+            <ul class="dotList">
+                <li>Lorem ipsum dolor sit1 amet.</li>
+                <li>Lorem ipsum dolor sit2amet.</li>
+                <li>Lorem ipsum dolor sit3 amet.</li>
+                <li>Lorem ipsum dolor sit4 amet.</li>
+               </ul>
+           </div>
+           
+    </section>
+</body>
+</html>
