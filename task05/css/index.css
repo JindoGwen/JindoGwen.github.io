@@ -284,6 +284,10 @@ iframe {
 .productBox figure {
     flex: 1;
 }
+.productBox figure {
+    width: 380px;
+    height: 226px;
+}
 
 .productBox .boxText{
     margin: 20px 0;
@@ -297,9 +301,223 @@ iframe {
 }
 
 .addMore {
-    margin: 30px 0;
+    margin: 150px 0 0 0;
     text-align: center;
     padding: 15px;
     border: 3px solid #dddddd;
     
+}
+
+
+
+
+/*section9*/
+.maingametNews {
+    padding: 130px 0 0 0;
+}
+.poketBg {
+    width: 1200px;
+    margin: 0 auto;
+}
+.poketBg {
+    padding: 50px 0 0 0;
+}
+
+.poketBg h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.poketContainer {
+    display: flex;
+    gap: 30px;
+   
+}
+
+.poketContainer .poketText {
+    flex: 1;
+}
+
+.poketText {
+    position: relative;
+    margin: 55px 0 0 0;
+    padding: 50px;
+    background: #6abddd91;
+    height: 480px;
+}
+.poketText::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-width: 0 0 50px 50px;
+    border-style: solid;
+    border-color: transparent transparent rgba(115,175,200,0.9);
+}
+
+.poketText h3 {
+
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin: 15px 0;
+    line-height: 23px;
+}
+
+.poketText  p{
+    padding: 50px 0;
+    font-size: 16px;
+    line-height: 22px;
+}
+.poketContainer02 {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.poketContainer02 figure {
+    border: 1px solid  #ddd;
+    
+    
+}
+
+.poketContainer02 .itm img {
+  height: 185px;
+  width: 298px;
+
+}
+.poketContainer02 dl {
+    position: absolute;
+    bottom: -50px;
+}
+.poketContainer02 dl>dt {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.poketprice {
+    margin: 130px 0;
+    display: flex;
+    background-color: rgb(230, 227, 227, 0.5);
+}
+
+.poketprice .Pim {
+    padding: 58px 0 30px 50px;
+}
+
+.poketprice .Pim img {
+    border-radius: 10px;
+    width: 314px;
+    height: 249px;
+    
+}
+
+.poketprice .priceImfor {
+ 
+   padding: 30px;
+}
+
+.poketprice .priceImfor h3 {
+    font-size: 40px;
+    margin: 30px 0;
+}
+.poketprice .priceImfor .listBadge{
+    margin:  auto 28px;
+}
+.poketprice .priceImfor .listBadge>li {
+    display: flex;
+}
+.listBadge>li>h4 {
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+    margin: 10px 30px 10px 0;
+    background: #000000;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 50px;
+}
+.listBadge>li>p {
+    margin: 15px 30px 10px 0;
+    font-weight: 500;
+}
+
+.priceImfor .PriceTag {
+   text-align: right;
+   line-height: 25px;
+   border-bottom: 1px solid rgb(8, 8, 8);
+   margin: auto 0 0 30px;
+    
+}
+
+.priceImfor .PriceTag .pt {
+    font-size: 30px;
+    font-weight: 700;   
+}
+
+.priceImfor .PriceTag .pt02 {
+    margin: 0 0 10px 0;
+}
+
+/* main section10*/
+.yellowLine {
+    position: relative;
+    background: #ffac13;
+    height: 130px;
+    text-align: center;
+}
+
+.yellowLine .lineContent {
+    padding: 15px;
+}
+
+.yellowLine .lineContent h2 {
+    margin: 15px 0;
+    font-size: 35px;
+    font-weight: 500;
+}
+.yellowLine .lineContent p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.yellowLine .lineContent .xi-caret-down-min {
+    font-size: 24px;
+}
+
+.yellowLine .lineImg {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+}
+
+.yellowLine .lineImg02 {
+    position: absolute;
+    top: -70%;
+    right: 70%;
+}
+
+/* main section11*/
+
+.Controls {
+    background-color: antiquewhite;
+    padding: 100px 0;
+}
+
+.controlsContent {
+    width: 1200px;
+    margin: 0 auto;
+}
+.controlsTitle {
+  
+}
+
+.controlsTitle h2 {
+    font-size: 35px;
+    margin: 10px 0;
+    font-weight: 500;
 }

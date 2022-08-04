@@ -1,0 +1,15 @@
+.container { display: flex; width: 1170px; margin: 0 auto; } 
+.basicSection { padding: 100px 0; } 
+.basicSection h2 { font-size: 30px; font-weight: 700; text-align: center; } 
+.basicSection h2::after { content: ""; display: block; width: 30px; height: 3px; background: #0d6efd; margin: 15px auto; } 
+.basicSection>p { margin: 0 0 50px 0; font-weight: 300; text-align: center; } 
+.mainColor { color:#0d6efd; } 
+.inner { width: 1200px; margin: 0 auto; } 
+.inner::after{content: " "; display: block; clear: both; }
+.dotList li { position: relative; padding: 0 0 0 20px; line-height: 1.2; margin: 0 0 5px 0; } 
+.dotList li::before { content: ""; position: absolute; top: 10px; left: 0; width: 2px; height: 2px; background: #0d6efd; } 
+.table { width: 100%; border-top: 3px solid #0d6efd; border-spacing: 0; border-collapse: collapse; } 
+.table td { padding: 15px 15px; border-left: 1px solid #ddd; } 
+.table th { padding: 15px 15px; text-align: left; background: #f7f7f7; font-weight: 400; } 
+.table tr { border-bottom: 1px solid#ddd; } 
+.responsiveTable { width: 100%; overflow-x: auto; } 
