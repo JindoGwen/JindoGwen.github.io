@@ -277,14 +277,16 @@ iframe {
 
 
 .productBox {
+    padding: 50px 0;
     display: flex;
     gap: 30px; 
+   
 }
 
 .productBox figure {
     flex: 1;
 }
-.productBox figure {
+.productBox figure .Pbs {
     width: 380px;
     height: 226px;
 }
@@ -301,7 +303,7 @@ iframe {
 }
 
 .addMore {
-    margin: 150px 0 0 0;
+    margin: 80px 0 0 0;
     text-align: center;
     padding: 15px;
     border: 3px solid #dddddd;
@@ -482,7 +484,7 @@ iframe {
 }
 .yellowLine .lineContent p {
     margin: 5px 0;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .yellowLine .lineContent .xi-caret-down-min {
@@ -504,13 +506,20 @@ iframe {
 /* main section11*/
 
 .Controls {
-    background-color: antiquewhite;
+    position: relative;
+    background-color: #f3ede5;
+    height: 80vh;
     padding: 100px 0;
+    
 }
 
 .controlsContent {
+    position: relative;
     width: 1200px;
     margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    
 }
 .controlsTitle {
   
@@ -520,4 +529,188 @@ iframe {
     font-size: 35px;
     margin: 10px 0;
     font-weight: 500;
+}
+.controlsTitle p {
+    font-size: 28px;
+    margin: 20px 0 0 0;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.controlsTitle span {
+    display: inline-block;
+    margin: 30px 10px auto auto;
+    background: #000000;
+    border-radius: 50px;
+    color: #fff;
+    padding: 10px;
+}
+
+.controlsTitle  .ScImg {
+    position: absolute;
+    right: 45%;
+}
+
+.controlsTitle  .ScImg>img{
+    width: 350px;
+    height: 330px;
+
+}
+
+.controlsImg {
+    margin: 0 0 0 50px;
+   
+}
+
+.slideContols {
+    width: 1200px;
+    margin: 0 auto;
+   
+}
+
+.slideText {
+    position: absolute;
+    bottom: -87%;
+    left: 40%;
+}
+
+.slideText h2 {
+  font-size: 50px;
+  margin: 30px 0;
+  font-weight: 500;
+}
+
+.slideText dl>dt {
+    margin: 30px 0;
+    font-size: 28px;
+}
+.slideText dl>dd{
+    margin: 30px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.slideText span {
+    font-size: 20px;
+}
+
+/*section12*/
+
+.bottomLine {
+    margin: 50px auto 0 auto;
+    width: 63%;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 17px;
+    border: 2px solid#dddddd;
+}
+.bottomText {
+    text-align: center;
+}
+
+.bottomText p {
+    margin: 10px  0;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+
+/*section12*/
+.blankBg {
+    visibility: hidden;
+}
+
+/*section13*/
+.redLine {
+    margin: 50px 0;
+    background: red;
+    height: 130px;
+}
+.lineImg03 {
+    width: 1200px; 
+    margin: 0 auto; 
+    padding: 50px 0;
+}
+
+/*footer */
+footer {
+    position: relative;
+    height: 250px;
+}
+
+.footerImg {
+    width: 1200px;
+    margin: 0 800px;
+    
+}
+
+.footIcon {
+    position: absolute;
+    font-size: 40px;
+    left: 18%;
+    top: 2%;
+    color: #fff;
+    
+}
+.footIcon .xi-youtube-play  {
+    background: red;
+    padding: 10px;
+}
+.footIcon .xi-twitter {
+    background: #26a1d191;
+    padding: 10px;
+}
+.footIcon .xi-facebook {
+    background-color: #1823b891;
+    padding: 10px;
+}
+
+.footIcon .xi-reddit {
+    background-color: #be5050;
+    padding: 10px;
+}
+
+.fotterImformation {
+    width:1200px;
+    margin: 60px 340px;
+    text-align: left;
+}
+.footerText {
+    display: flex;
+    gap: 30px;
+    margin: 15px 0;
+}
+.footerText>ul {
+    display: flex;
+    position: relative;
+}
+
+.footerText>ul::before {
+    content: "";
+    position: absolute;
+    top: 19%;
+    left: -10px;
+    height: 12px;
+    width: 1px;
+    background: rgb(0, 0, 0, 0.7);
+}
+
+.fotterCeo {
+    display: flex;
+    gap: 30px;
+    margin: 15px 0;
+}
+.fotterCeo>ul {
+    display: flex;
+    
+    gap: 30px;
+}
+.fotterCeo>ul>li::before {
+    content: "";
+    display: inline-block;
+    margin: auto 10px 0 0;
+    height: 11px;
+    width: 1px;
+    background: rgb(0, 0, 0, 0.7);
 }
