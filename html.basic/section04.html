@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>section04</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+     <h2>hello</h2>
+     <script>
+        const bd = document.querySelector('body')
+
+        function resizeHandler () {
+            const size = window.innerWidth
+            if (size >= 700 ){
+                bd.style.background ="red"
+            }else if (size < 700 && size >400){
+                bd.style.background ="blue"
+            }else {
+                bd.stlye.background='orange'
+            }
+        }
+
+        window.addEventListener('resize', resizeHandler)
+     </script>
+</body>
+</html>
