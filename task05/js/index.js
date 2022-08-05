@@ -4,7 +4,7 @@ $(function(){
         autoplay: true,
         pasueOnHover: false,
         pasueOnFocus: false,
-        autoplaySpeed:3000,
+        autoplaySpeed: 2000,
     });
     
     $('.slideContols').slick({
