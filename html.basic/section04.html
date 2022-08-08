@@ -10,22 +10,25 @@
     </style>
 </head>
 <body>
-     <h2>hello</h2>
+    <div class="form">
+    <input type="text" placeholder="what is your name ?">
+    <button>Log in</button>
+     </div>  
      <script>
-        const bd = document.querySelector('body')
+        const loginInput = document.querySelector('.form input');
+        const loginbutton = document.querySelector('.form button')
 
-        function resizeHandler () {
-            const size = window.innerWidth
-            if (size >= 700 ){
-                bd.style.background ="red"
-            }else if (size < 700 && size >400){
-                bd.style.background ="blue"
-            }else {
-                bd.stlye.background='orange'
-            }
-        }
+       function onEventHandler (){
+           const username = loginInput.value;
+           if (username === ""){
+            alert("please write your name ")
 
-        window.addEventListener('resize', resizeHandler)
+           }else if(username.length) {
+              alert ("your name is too long ")
+           }
+       }
+
+        loginbutton.addEventListener('click', onEventHandler)
      </script>
 </body>
 </html>
