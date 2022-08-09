@@ -3,84 +3,78 @@ html {
 }
 
 .header {
-  
-    line-height: 10rem;
+    position: fixed;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.9);
+    height: 10rem;
+    padding: 1rem;
+
+}
+.headerContainer {
+    position: fixed;
+    left: 35rem;
+    display: flex;
+    text-align: center;
+    color: aliceblue;
    
 }
 
-.header .headerContainer {
-    display: flex;
-    justify-content: space-between;
+.on{
+    background: #fff;
+    color: black;
 }
 
 .headerContainer h1 {
-    padding: 1.5rem;
-    width: 13rem;
-    height: 13rem;
+     width: 25rem;
+     padding: 0.5rem;
 }
 
-.headerContainer .gnb ul {
+.gnb {
+    margin: 0 10rem;
+}
+
+.gnb ul {
     display: flex;
-    font-size: 2rem;
+    margin: 3.5rem 0;
+    font-size: 1.9rem;
+    font-weight: 500;
     gap: 3rem;
-    text-align: center;
-    margin: auto auto auto 8rem;
-    
+  
 }
-
-.headerContainer .gnb ul>li {
+.gnb ul>li {
     position: relative;
-    padding: 2rem 3rem  ; 
+    margin: 0 1.5rem;
+    
 }
 
-.headerContainer .gnb ul>li:hover .Smenu {
+.gnb ul>li:hover .Smenu {
     display: block;
-    
 }
 
 .Smenu {
-    position: absolute;
-    top: 10rem; 
-    left: 50%;
-    transform: translate(-60%);
     display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    z-index: 999;
+    
 }
 
-.Smenu ul  {
+.Smenu>ul {
+    font-size: 1.7rem;
+    font-weight: 400;
     flex-direction: column;
-    background: #ddd;
-    width: 150px;  
 }
 
-.Smenu ul>li {
-    line-height: 1.5;
-    font-size: 1.8rem;
-   
+.headerIcon {
+    font-size: 2.5rem;
+    margin: 3.5rem 0;   
 }
 
-.Smenu ul>li a{
-  display: block;
+.headerIcon i {
+    margin: 0 1rem;
 }
 
-.headerContainer form {
-    margin: 0 2rem 0 0;
-    padding: 1.8rem;
-    font-size: 1.5rem;
-}
 
-.headerContainer input {
-    position: relative;
-    border: none;
-    border-bottom: 1px solid #333;
-}
-.headerContainer .xi-search {
-   position: absolute;
-   right: 2%;
-   top: 5%;
-   font-size: 2.3rem;
-}
 
-.mainVideo {
-    width: auto;
-    height: 100vh;
-}
