@@ -2,79 +2,109 @@ html {
     font-size: 10px;
 }
 
+/*header*/
 .header {
-    position: fixed;
-    width: 100%;
-    background: rgb(0, 0, 0, 0.9);
-    height: 10rem;
-    padding: 1rem;
+    display: block;
+    background-color: rgb(9, 9, 9);
+    color: #fff;
 
 }
-.headerContainer {
-    position: fixed;
-    left: 35rem;
+.topHeader {
+    border-top: 2px solid #1a063f;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    border-bottom:1px solid rgb(87, 85, 85);
+}
+
+.topHeader .content {
     display: flex;
-    text-align: center;
-    color: aliceblue;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+.topHeader .content>strong{
+    font-weight: 300;
+    font-family: Parisienne;
+}
+.topHeader .content .topIcon {
+    display: flex;
+    gap: 20px;
+    font-size: 1.8rem;
+}
+
+.bottomHeader {
+    width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-between;
+    text-align: center;  
+}
+.bottomHeader .gnb {
+    line-height: 10rem;
+}
+
+
+.bottomHeader .gnb>ul {
+   display: flex;
+   gap: 55px;
+   font-size: 1.7rem;
+   line-height: 10rem;
+   
    
 }
-
-.on{
-    background: #fff;
-    color: black;
-}
-
-.headerContainer h1 {
-     width: 25rem;
-     padding: 0.5rem;
-}
-
-.gnb {
-    margin: 0 10rem;
-}
-
-.gnb ul {
-    display: flex;
-    margin: 3.5rem 0;
-    font-size: 1.9rem;
-    font-weight: 500;
-    gap: 3rem;
-  
-}
-.gnb ul>li {
+.bottomHeader .gnb>ul>li{
     position: relative;
-    margin: 0 1.5rem;
     
 }
 
-.gnb ul>li:hover .Smenu {
+.bottomHeader .mark>h1 {
+    width: 25rem;
+    padding: 1rem 0;
+}
+
+.bottomHeader .gnb>ul>li:hover .Smenu {
     display: block;
 }
+
 
 .Smenu {
     display: none;
     position: absolute;
+    top: 100px;
     left: 50%;
-    transform: translateX(-50%);
-    width: 15rem;
+    transform: translateX(-46%);
+    line-height: 2.5rem;
+    width: 100px;
     z-index: 999;
+    background: rgb(5, 5, 5,  0.8);   
+}
+
+.Smenu li {
+    margin:1.5rem 0 1.5rem 0;
     
 }
 
-.Smenu>ul {
-    font-size: 1.7rem;
-    font-weight: 400;
-    flex-direction: column;
+.Smenu li a {
+    display: block;
 }
 
-.headerIcon {
+/*section01*/
+.mainVisual {
+   width: 100%;
+   height: 83.2vh;
+   position: relative;
+   
+}
+
+
+
+.player .control {
+    position: absolute;
+    bottom: 50%;
+    left: 47%;
+    transform: translate(-50% -50%);
     font-size: 2.5rem;
-    margin: 3.5rem 0;   
+    color: #fff;
+    
 }
-
-.headerIcon i {
-    margin: 0 1rem;
-}
-
-
 

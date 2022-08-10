@@ -1,0 +1,269 @@
+  jQuery(document).ready(function() {
+     // faq
+  $('.faqpanel-row .faqpanel-title').click(function(){
+    $('.faqpanel-row.opened').removeClass('opened');
+     $(this).parents('.faqpanel-row').addClass('opened');
+ });
+ 
+    jQuery('#banner-slider-demo-1').slick({
+      dots: true,
+      autoplay: true,
+      speed: 300,
+      autoplaySpeed: 2500,
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      responsive: [{
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }, {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }, {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
+    });
+    jQuery('.partner_logo_div').slick({
+      dots: false,
+      autoplay: true,
+      speed: 300,
+      autoplaySpeed: 2500,
+      arrows: false,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      responsive: [{
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          dots: true,
+        }
+      }, {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: true,
+        }
+      }, {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+        }
+      }]
+    });
+    jQuery('.whats_new_video_div').slick({
+      dots: false,
+      autoplay: true,
+      speed: 300,
+      autoplaySpeed: 2500,
+      arrows: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [{
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+        }
+      }, {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      }]
+    });
+    if (jQuery(window).width() < 860) {
+      jQuery('.home_news_widget_inner').slick({
+        dots: false,
+        infinite: true,
+        autoplay: false,
+        speed: 300,
+        autoplaySpeed: 2500,
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [{
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }]
+      });
+    }
+
+  jQuery(".toggle_menu a#view_full_menu").click(function() {
+    $('.home_our_menu .more-item').toggleClass('not-visible');
+    $(this).toggleClass('clicked');
+  });
+  jQuery("#burger_menu_a").click(function() {
+    jQuery('.site-nav').show();
+  });
+  jQuery(".close-site-nav").click(function() {
+    jQuery('.site-nav').hide();
+  });
+
+  jQuery(".site-nav ul li#menu-item-47").click(function() {
+    jQuery('.more_menu').show();
+  });
+
+  jQuery(".site-nav ul li#menu-item-1309").click(function() {
+    jQuery('.more_menu').show();
+  });
+  
+  jQuery(document).on('click', '.close-more', function() {
+    jQuery('.more_menu').fadeOut();
+  });
+
+    jQuery('.tacobell-RstrntImg').magnificPopup({
+      delegate: 'a.photo-zoom',
+      type: 'image',
+      mainClass: 'mfp-with-zoom mfp-img-mobile',
+      image: {
+        verticalFit: true,
+      },
+      gallery: {
+        enabled: true
+      },
+      zoom: {
+        enabled: true,
+        duration: 230,
+        opener: function(element) {
+          return element.find('img');
+        }
+      }
+    });
+    jQuery('.popup-youtube').magnificPopup({
+      enableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false
+  });
+
+
+	
+	
+	
+	
+var ppp = 3; // Post per page
+var pageNumber = 1;
+function load_posts(){
+    pageNumber++;
+    var str = '&pageNumber=' + pageNumber + '&ppp=' + ppp + '&action=more_post_ajax';
+    $.ajax({
+        type: "POST",
+        dataType: "html",
+        url: ajax_posts.ajax_url,
+        data: str,
+        success: function(data){
+            var $data = $(data);
+            if($data.length==5){
+                $("#ajax-posts").append($data);
+                $("#load_more_posts").attr("disabled",false);
+            } else{
+				$("#ajax-posts").append($data);	
+                $("#load_more_posts").css("display","none");
+            }
+        },
+        error : function(jqXHR, textStatus, errorThrown) {
+            $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+        }
+
+    });
+    return false;
+}
+
+$("#load_more_posts").on("click",function(){ // When btn is pressed.
+    $("#load_more_posts").attr("disabled",true); // Disable the button, temp.
+    load_posts();
+});
+
+
+
+
+var pppn = 3; // Post per page
+var pageNumbern = 1;
+function load_news(){
+    pageNumbern++;
+    var strn = '&pageNumber=' + pageNumbern + '&ppp=' + pppn + '&action=more_news_ajax';
+    $.ajax({
+        type: "POST",
+        dataType: "html",
+        url: ajax_news.ajax_url,
+        data: strn,
+        success: function(data){
+			
+            var $data = $(data);
+            if($data.length == 5){
+                $("#ajax-news").append($data);
+                $("#load_more_news").attr("disabled",false);
+            } else{
+				$("#ajax-news").append($data);	
+                $("#load_more_news").css("display","none");
+            }
+        },
+        error : function(jqXHR, textStatus, errorThrown) {
+            $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+        }
+
+    });
+    return false;
+}
+
+$("#load_more_news").on("click",function(){ // When btn is pressed.
+    $("#load_more_news").attr("disabled",true); // Disable the button, temp.
+    load_news();
+});
+  
+
+if($(window).width() < 991){
+  jQuery(".site-nav ul li#menu-item-5").click(function() {
+  jQuery('.site-nav').hide();
+  $('html, body').animate({ 
+    scrollTop:$("#our_menu_id").offset().top - 120 
+}, 300);
+  });
+
+var url = window.location.href;
+ url = url.split('#');
+ url = url[1];
+ if(url){
+    $('html, body').animate({ 
+      scrollTop:$("#"+url).offset().top - 120 
+  }, 300);
+}
+}
+  });
+
+
+
+
+  jQuery(window).scroll(function() {
+    var scroll = jQuery(window).scrollTop();
+    if (scroll >= 150) {
+      jQuery(".category-view").addClass("fixit");
+    } else {
+      jQuery(".category-view").removeClass("fixit");
+    }
+  });
+
+  
+;
