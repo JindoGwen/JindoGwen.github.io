@@ -1,110 +1,494 @@
-html {
-    font-size: 10px;
+html { font-size: 10px;}
+
+.Header {
+    line-height: 5rem; 
 }
 
-/*header*/
-.header {
-    display: block;
-    background-color: rgb(9, 9, 9);
-    color: #fff;
-
+.hContainer {
+    position: relative;
 }
-.topHeader {
-    border-top: 2px solid #1a063f;
-    line-height: 4rem;
-    font-size: 1.5rem;
-    border-bottom:1px solid rgb(87, 85, 85);
+.topBanner {
+    background-color: rgb(247, 141, 20);
+    border-bottom: 1px solid rgb(241, 237, 233, 0.5)
 }
-
-.topHeader .content {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 2rem;
-}
-.topHeader .content>strong{
-    font-weight: 300;
-    font-family: Parisienne;
-}
-.topHeader .content .topIcon {
-    display: flex;
-    gap: 20px;
-    font-size: 1.8rem;
-}
-
-.bottomHeader {
+.topContent {
     width: 120rem;
     margin: 0 auto;
     display: flex;
-    padding: 1rem 0;
-    justify-content: space-between;
-    text-align: center;  
+    justify-content: space-between; 
 }
-.bottomHeader .gnb {
-    line-height: 10rem;
+.topBanner  strong {
+    font-size: 1.3rem;
+    font-family: Parisienne;
+    font-weight: 600;
+    margin: auto 0 auto 1.2rem;
+
 }
-
-
-.bottomHeader .gnb>ul {
-   display: flex;
-   gap: 55px;
-   font-size: 1.7rem;
-   line-height: 10rem;
-   
-   
+.topBanner  .topIcon {
+    font-size: 1.8rem;
 }
-.bottomHeader .gnb>ul>li{
-    position: relative;
-    
+.topBanner  .topIcon a {
+   margin: auto 0.5rem;
 }
-
-.bottomHeader .mark>h1 {
-    width: 25rem;
-    padding: 1rem 0;
-}
-
-.bottomHeader .gnb>ul>li:hover .Smenu {
-    display: block;
-}
-
-
-.Smenu {
-    display: none;
+.bottomBanner {
     position: absolute;
-    top: 100px;
+    width: 120rem;
     left: 50%;
-    transform: translateX(-46%);
-    line-height: 2.5rem;
-    width: 100px;
-    z-index: 999;
-    background: rgb(5, 5, 5,  0.8);   
+    top: 120%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.bottomBanner .mark{
+    width: 25rem; 
 }
 
-.Smenu li {
-    margin:1.5rem 0 1.5rem 0;
-    
+.bottomBanner .gnb  {
+    margin: 1.5rem 0;
+    font-size: 1.8rem;
+    color: azure;
 }
-
-.Smenu li a {
-    display: block;
+.bottomBanner .gnb ul {
+    display: flex;
+    gap: 40px;
 }
 
 /*section01*/
-.mainVisual {
-   width: 100%;
-   height: 83.2vh;
-   position: relative;
+.mainBackground {}
+
+.mainVisual .bg {
+    background: url(../img/main00.jpg) no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 98vh;   
+}
+  .wheel {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4rem;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #fff;
+   }
+
+ .wheel span {
+    font-size: 0;
+    position: absolute;
+    top: 2rem;
+    left: 0.5rem;
+    border-radius: 2px;
+    animation: wheel  1s infinite;
+   }
+
+   .wheel span i {
+    color: #fff;
+    font-size: 3rem;
+   }
+
+   @keyframes wheel {
+     to {
+        top: 5px;
+     }
+   }
+   .mopen {display: none;}
+
+/*section02*/
+
+.mainLine {
+    position: relative;
+    padding: 5rem 0 0 0;
    
 }
 
+.lineMark  {
+   position: absolute;
+   left: 20.5%;
+   top: 15%;
+   transform: translateX(-50%);
+}
+
+.lineMark img{
+    width: 8rem;
+
+}
+
+.lineText {
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    font-family: Parisienne;
+    margin: 2rem 0;
+}
+
+.lineText h2 {
+    font-weight: 700;
+}
 
 
-.player .control {
+.lineText::after {
+    content: "";
     position: absolute;
-    bottom: 50%;
-    left: 47%;
-    transform: translate(-50% -50%);
-    font-size: 2.5rem;
-    color: #fff;
+    top: 15px;
+    left: 18.5%;
+    width: 27%;
+    height: 0.2rem;
+    background: #333;
+  
+    
+}
+.lineText::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 18.5%;
+    width: 27%;
+    height: 0.2rem;
+    background: #333;
+   
+}
+
+.mainStory {
+    padding: 5rem 0;
+    width: 120rem;
+    margin: 0 auto;
+    display: flex;
+}
+
+.mainStory .storyImg {
+    width: 100rem;
+}
+
+.storyText {
+    background-color: rgb(247, 141, 20) ;
+    padding: 4rem;
+}
+
+.storyText h2 {
+    font-size: 3rem;
+    margin: 2rem 0;
+    font-weight: 500;
+}
+
+.storyText p {
+    line-height: 1.8rem;
+    font-size: 1.3rem;
     
 }
 
+.storyText .link {
+    display: block;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+}
+
+
+
+
+
+/*section03*/
+
+.menuText {
+    position: relative;
+    text-align: center;
+    margin: 4rem 0;
+    font-size: 3rem;
+    font-family: Parisienne;
+    font-weight: 700;
+}
+
+.menuText::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 18.5%;
+    width: 27%;
+    height: 0.2rem;
+    background: #333;
+  
+    
+}
+.menuText::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 18.5%;
+    width: 27%;
+    height: 0.2rem;
+    background: #333;
+   
+}
+
+.flexBox {
+    width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    gap: 50px;
+}
+
+.flexBox figure img {
+ width: 580px;
+ height: 300px;
+}
+
+.flexBox figure img:nth-child(1){
+    height: 250px;
+}
+
+.flexBox span {
+  font-size: 2rem;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+
+
+
+
+/* respansive*/
+   @media(max-width:768px){
+/*section01*/
+
+html { 
+    font-size: 8px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.Header {
+    line-height: 5rem; 
+}
+
+.hContainer {
+    position: relative;
+}
+.topBanner {
+    background-color: rgb(247, 141, 20);
+    border-bottom: 1px solid rgb(241, 237, 233, 0.5)
+}
+.topContent {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+}
+.topBanner  strong {
+    font-size: 1.3rem;
+    font-family: Parisienne;
+    font-weight: 600;
+    margin: auto 0 auto 1.2rem;
+
+}
+.topBanner  .topIcon {
+    font-size: 1.8rem;
+}
+.topBanner  .topIcon a {
+   margin: auto 0.5rem;
+}
+.bottomBanner {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 120%;
+    transform: translateX(-50%);
+    display: flex;
+
+}
+.bottomBanner .mark{
+    width: 25rem; 
+}
+
+.bottomBanner .gnb  {
+    display: none;
+    position: absolute;
+    top: -35%;
+    width: 80%;
+    height: 60vh;
+    background:rgb(247, 141, 20) ;
+    font-size: 1.8rem;
+    color:  #333;
+    line-height: 0.5rem;
+    text-align: center;
+    padding: 5rem 0;
+    border-bottom: 1px solid rgba(199, 194, 194, 0.9);
+    border-right: 1px solid rgba(199, 194, 194, 0.9) ;
+    opacity: 0.9;
+}
+
+.bottomBanner .gnb ul {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+}
+
+.gnb.on {
+    display: block;
+}
+
+
+.mopen { display: block; position: absolute; right: 3px; top: 6%; font-size: 10px; padding: 1px; line-height: 1px; z-index: 999; border-radius: 15px; } 
+.hamburger-inner { background-color: #fff; } 
+.hamburger-inner::before { background-color: #fff; } 
+.hamburger-inner::after { background-color: #fff; } 
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before { background-color: #fff; } 
+
+.mainVisual .bg {
+    background: url(../img/main00.jpg) no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 60vh;   
+    }
+.wheel { display: none; }
+
+
+/* section02*/
+.mainLine {
+    position: relative;
+    padding: 5rem 0 0 0;
+   
+}
+
+.lineMark  {
+   position: absolute;
+   left: 20.5%;
+   top: 15%;
+   transform: translateX(-50%);
+}
+
+.lineMark img{
+    width: 8rem;
+
+}
+
+.lineText {
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    font-family: Parisienne;
+    margin: 2rem 0;
+}
+
+.lineText h2 {
+    font-weight: 700;
+}
+
+
+.lineText::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    width: 27%;
+    height: 0.2rem;
+    background: #333; 
+}
+.lineText::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10%;
+    width: 27%;
+    height: 0.2rem;
+    background: #333;
+}
+.mainStory {
+    width: 100%;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.mainStory .storyImg {
+    width: 100%;
+}
+.storyText {
+    width: 100%;
+    background-color: rgb(247, 141, 20) ;
+    text-align: center;
+}
+
+.storyText h2 {
+    font-size: 4rem;
+    margin: 2rem 0;
+    font-weight: 500;
+}
+
+.storyText p {
+    line-height: 3rem;
+    font-size: 2rem;
+    
+}
+
+.mBr {
+    display: none;
+}
+
+.storyText .link {
+    display: block;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    
+}
+
+ .mainMenu .flexBox {
+    display: none;
+    width: 120rem;
+    margin: 0 auto;
+    text-align: center;
+    gap: 50px;
+}
+
+.menuText {
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    font-family: Parisienne;
+    font-weight: 700;
+}
+
+
+.menuText::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 10%;
+    width: 27%;
+    height: 0.2rem;
+    background: #333;
+  
+    
+}
+.menuText::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 10%;
+    width: 27%;
+    height: 0.2rem;
+    background: #333;
+}
+
+.mobileMenu  {
+    display: block;
+    padding: 4rem 0;
+}
+.mobilMtext {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 2rem 0;
+    background-color:  rgb(247, 141, 20) ;
+}
+
+
+
+
+
+}
