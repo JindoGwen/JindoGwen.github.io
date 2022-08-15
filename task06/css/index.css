@@ -114,12 +114,17 @@ html { font-size: 10px;}
 
 }
 
+.mainContent {
+    padding: 3rem 0 0 0;
+}
+
 .lineText {
     position: relative;
     text-align: center;
     font-size: 3rem;
     font-family: Parisienne;
     margin: 2rem 0;
+
 }
 
 .lineText h2 {
@@ -182,16 +187,17 @@ html { font-size: 10px;}
     margin: 2rem 0;
     font-size: 1.5rem;
     font-weight: 500;
-    
 }
-
-
-
-
 
 /*section03*/
 
+.mainMenu {
+    padding: 0 0 5rem 0;
+   
+}
+
 .menuText {
+    padding:0 0 5rem 0;
     position: relative;
     text-align: center;
     margin: 4rem 0;
@@ -222,29 +228,225 @@ html { font-size: 10px;}
    
 }
 
+
 .flexBox {
     width: 120rem;
     margin: 0 auto;
     display: flex;
+    gap: 0.5rem;
+ 
+    
+    
+}
+
+.flexBox dl {
+    margin: 1rem 0;
     text-align: center;
-    gap: 50px;
+
+   
+}
+
+.flexBox dl>dt {
+    position: relative;
+    font-size: 2rem;
+    font-family: Parisienne;
+    font-weight: 700;
+    
+}
+
+.flexBox dl>dt::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 9.5rem;
+    height: 0.1rem;
+    background: #000000;
+}
+.flexBox dl>dt::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    width: 9.5rem;
+    height: 0.1rem;
+    background: #000000;
+}
+
+.flexBox dl>dd {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 1rem;
+}
+.flexBox02 {
+    width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    gap: 0.5rem;
+    padding: 5rem 0;
+    
+}
+
+.flexBox02 dl {
+    margin: 1rem 0;
+    text-align: center;
+
+   
+}
+
+.flexBox02 dl>dt {
+    position: relative;
+    font-size: 2rem;
+    font-family: Parisienne;
+    font-weight: 700;
+    
+}
+
+.flexBox02 dl>dt::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 9.5rem;
+    height: 0.1rem;
+    background: #000000;
+}
+.flexBox02 dl>dt::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    width: 9.5rem;
+    height: 0.1rem;
+    background: #000000;
+}
+
+.flexBox02 dl>dd {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 1rem;
+}
+
+.more {
+    position: relative;
+    margin: 5rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Parisienne;
+    font-weight: 700;
+}
+
+.more::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 0.1rem;
+    background: #000000;
+}
+.more::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 47%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 0.1rem;
+    background: #000000;
 }
 
 .flexBox figure img {
- width: 580px;
- height: 300px;
-}
-
-.flexBox figure img:nth-child(1){
-    height: 250px;
-}
-
-.flexBox span {
-  font-size: 2rem;
+    width: 300px;
+    height: 300px;
 }
 
 .mobileMenu {
     display: none;
+}
+
+/*section04*/
+.inforContainer {
+    position: relative;
+    background-color: rgb(247, 141, 20) ;
+    height: 20vh;
+    text-align: center;
+    color: #fff;
+}
+
+.inforName h2 {
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+.inforName p {
+    position: relative;
+    font-size: 1.8rem;
+}
+.inforName p::after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    width: 0.1rem;
+    height: 10rem;
+    background-color:#fff;
+}
+
+.inforIcon  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 5rem;
+    
+}
+
+.inforIcon  a {
+    margin: 0 1rem;
+}
+
+.iconSpan {
+    display: block;
+    font-size: 1.8rem;
+}
+
+.inforIcon a:hover {
+    color: #000000;
+}
+
+
+
+
+/*section05 */
+.mainAd {
+    padding: 10rem 0;
+    width: 120rem;
+    margin: 0 auto;
+   
+}
+
+.mainAd .adContent {
+    text-align: left;
+    margin: 1rem 0;
+    font-size: 2.5rem;
+
+}
+
+.adContainer {
+    display: flex;
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+.adContainer02 {
+    display: flex;
+    gap: 10px;
 }
 
 
@@ -437,12 +639,13 @@ html {
     
 }
 
+/*section03*/
  .mainMenu .flexBox {
-    display: none;
-    width: 120rem;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     text-align: center;
-    gap: 50px;
+   
 }
 
 .menuText {
@@ -451,6 +654,8 @@ html {
     font-size: 3rem;
     font-family: Parisienne;
     font-weight: 700;
+    padding: 0;
+    margin: 3rem 0 0 0;
 }
 
 
@@ -462,8 +667,6 @@ html {
     width: 27%;
     height: 0.2rem;
     background: #333;
-  
-    
 }
 .menuText::before {
     content: "";
@@ -474,10 +677,28 @@ html {
     height: 0.2rem;
     background: #333;
 }
+.flexBox dl>dt::before{
+   display: none;
+   
+}
+.flexBox dl>dt::after{
+   display: none;
+   
+}
+.flexBox dl>dd {
+    display: none;
+}
+.more {
+    display: none;
+}
+
+.flexBox02 {
+    display: none;
+}
 
 .mobileMenu  {
     display: block;
-    padding: 4rem 0;
+    padding: 0;
 }
 .mobilMtext {
     text-align: center;
@@ -488,7 +709,56 @@ html {
 }
 
 
+/*section04*/
 
+.inforContainer {
+    border-top: 1px solid#fff;
+    position: relative;
+    background-color: rgb(247, 141, 20) ;
+    height: 13vh;
+    text-align: center;
+    color: #fff;
+}
 
+.inforName h2 {
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+.inforName p {
+    position: relative;
+    font-size: 1.8rem;
+}
+.inforName p::after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    width: 0.1rem;
+    height: 10rem;
+    background-color:#fff;
+}
+
+.inforIcon  {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 3rem;
+    
+}
+
+.inforIcon  a {
+    margin: 0 1rem;
+}
+
+.iconSpan {
+    display: block;
+    font-size: 1.8rem;
+}
+
+.inforIcon a:hover {
+    color: #000000;
+}
 
 }
