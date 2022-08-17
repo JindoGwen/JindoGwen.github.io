@@ -382,6 +382,7 @@ html { font-size: 10px;}
 .inforName h2 {
     font-size: 2rem;
     padding: 2rem 0;
+   
 }
 .inforName p {
     position: relative;
@@ -390,10 +391,10 @@ html { font-size: 10px;}
 .inforName p::after {
     content: "";
     position: absolute;
-    top: 150%;
+    top: 155%;
     left: 50%;
     width: 0.1rem;
-    height: 10rem;
+    height: 9rem;
     background-color:#fff;
 }
 
@@ -420,10 +421,140 @@ html { font-size: 10px;}
     color: #000000;
 }
 
+/*section05*/
+.storeInfor {
+    background-color: bisque ;
+}
+.storeInformation {
+    width: 120rem;
+    margin: 0 auto;
+    padding: 10rem 0 0 0;
+}
+
+.inforContent {
+    display: flex;
+}
+.storeText {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 2rem 1rem;
+    font-family: Parisienne;
+    text-align: left;
+}
+
+.leftContent {
+    margin: 0 0 0 1rem;
+    width: 57.5rem;
+    height: 350px;
+    padding: 5rem;
+}
+
+.rightContent .table {
+    width: 100%;
+    border-top: 3px solid rgb(247, 141, 20);
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin:  0 3.5rem;
+    text-align: center;
+}
+
+.rightContent .table .title td {
+    font-size: 2rem;
+    padding: 1rem 0;
+   
+}
+.underT  {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    border-bottom: 1px solid rgb(247, 141, 20, 0.3 );
+}
 
 
 
-/*section05 */
+
+.storeContent {
+    position: relative;
+    width: 120rem;
+    margin: 0 auto;
+    padding: 5rem 0 ;
+    text-align: center;
+}
+
+.storeContent h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 2rem 1rem;
+    font-family: Parisienne;
+    text-align: left;
+}
+
+.storeBox {
+    position: relative;
+    font-size: 1.15rem;
+    line-height: 1.5;  
+}
+
+.storeBox span {
+    margin: 0 1rem;
+}
+
+.storeBox figure {
+    margin: 0 1rem;
+}
+
+.storeBox figure .pic {
+    width: 400px !important;
+    height: 300px !important;
+    margin: 0 0 1rem 0;
+}
+ 
+.storeContent  .boxArrows i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 5rem;
+    color: #333;
+    
+    
+}
+
+.storeContent  .boxArrows i:nth-child(1) {
+   margin: 0 0 0 -650px;
+}
+.storeContent  .boxArrows i:nth-child(2) {
+    margin: 0 0 0 600px;
+}
+
+.slick-dots {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12%;
+    font-size: 0;
+}
+
+.slick-dots li {
+    padding: 1rem 0.5rem;
+    
+}
+.slick-dots li>button {
+    border: 1px solid#ddd;
+    border-radius: 50%;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    
+}
+
+.slick-dots  .slick-active>button {
+    background-color: rgb(247, 141, 20);
+}
+
+
+
+
+/*section06 
 .mainAd {
     padding: 10rem 0;
     width: 120rem;
@@ -448,7 +579,7 @@ html { font-size: 10px;}
     display: flex;
     gap: 10px;
 }
-
+*/
 
 
 
