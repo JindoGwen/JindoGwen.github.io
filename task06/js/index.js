@@ -1,3 +1,19 @@
+window.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('scroll', () => {
+          let sct = window.scrollY;
+          console.log(sct);
+          sct > 500
+          ? document.querySelector('.to_top').classList.add('on')
+          : document.querySelector('.to_top').classList.remove('on')
+      });
+
+      document.querySelector('.to_top').addEventListener('click', () => {
+        window.scrollTo({top: 0, behavior:'smooth'})
+    });
+
+  })
+
+
 $('.hamburger').on('click',function(){
     $(this).toggleClass('is-active');
     $('.gnb').toggleClass('on')
@@ -38,3 +54,13 @@ $(' .boxArrows i:nth-child(2)').on('click' , function (){
     
 });
 
+
+$('.mobileStoreBox').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows:false,
+    dots: true,
+  });
+
+
+  

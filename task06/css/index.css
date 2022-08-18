@@ -423,7 +423,8 @@ html { font-size: 10px;}
 
 /*section05*/
 .storeInfor {
-    background-color: bisque ;
+    background:bisque;
+    
 }
 .storeInformation {
     width: 120rem;
@@ -551,10 +552,153 @@ html { font-size: 10px;}
     background-color: rgb(247, 141, 20);
 }
 
+.mobileStoreBox {
+    display: none;
+}
+
+/*section06*/
+.lastMain {
+    padding: 10rem 0 5rem 0;
+}
+.lastContainer img {
+    width: 320px;
+    height: 320px;
+}
+
+.lastText {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.appContainer {
+    position: relative;
+    display: flex;
+}
+.appPic .button {
+    position: absolute;
+    right: 16.5%;
+    bottom: 10%;
+    
+}
+.appText{
+    position: absolute;
+    right: -3%;
+    padding:8rem 2rem;
+}
+
+.appText h3 {
+    font-size: 3rem;
+    margin: 2rem 0 4rem 0;
+    font-weight: 500;
+}
+.appText span {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.textFlex {
+    display: flex;
+    font-size: 1.7rem;
+    gap: 3rem;
+    line-height: 2.5rem;
+
+}
+
+.textFlex ul>li {
+    margin: 3rem 0;
+}
+
+.lastText h2 {
+    margin: 1.5rem 0;
+    font-size: 3rem;
+}
+
+.lastText strong {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+
+.lastText .appPic .phone {
+    display: block;
+    padding: 2rem 3rem  5rem 0;
+}
+
+/*footer*/
+.Footer {
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(bisque 20%, rgb(247, 141, 20));
+    
+}
+.footerContainer {
+    padding: 3rem;
+    font-size: 1.3rem;
+}
+.footerLogo {
+    display: flex;
+    justify-content: center;
+    margin: 0 4rem 2rem 0;
+}
+.footerIcon {
+    font-size: 2.1rem;
+    margin: 5rem 0 1rem 40rem;
+}
 
 
 
-/*section06 
+.topLine ul {
+    display: flex;
+    justify-content: center;
+    line-height: 2.3rem;
+    
+}
+.topLine ul>li {
+    margin: 0 1rem;
+}
+
+.topLine ul>li~li::before {
+    content: "";
+    display: inline-block;
+    height: 1.2rem;
+    width: 1px;
+    background: rgb(68, 67, 67);
+    opacity: 0.7;
+    margin: 0 0.5rem;
+}
+
+.bottomLine {
+   position: relative;
+}
+.footerIcon {
+    position: absolute;
+    bottom: -50px;
+    left: 24%;
+    
+}
+
+.to_top {
+    position:fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 15px;
+    background: linear-gradient(bisque 10%, rgb(247, 141, 20));
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 999;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.to_top.on {
+   opacity: 1;
+}
+
+
+
+
+/*section ad
 .mainAd {
     padding: 10rem 0;
     width: 120rem;
@@ -592,7 +736,9 @@ html {
     font-size: 8px;
     width: 100%;
     overflow-x: hidden;
+    
 }
+
 
 .Header {
     line-height: 5rem; 
@@ -862,10 +1008,10 @@ html {
 .inforName p::after {
     content: "";
     position: absolute;
-    top: 150%;
+    top: 170%;
     left: 50%;
     width: 0.1rem;
-    height: 10rem;
+    height: 5rem;
     background-color:#fff;
 }
 
@@ -891,5 +1037,268 @@ html {
 .inforIcon a:hover {
     color: #000000;
 }
+
+/*section05 */
+
+.storeInfor {
+    background-color: bisque ;
+
+}
+.storeInformation {
+    width: 100%;
+    padding: 10rem 0 0 0;
+}
+
+.inforContent {
+    display: flex;
+    flex-direction: column;
+}
+.storeText {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 2rem 1rem;
+    font-family: Parisienne;
+    text-align: center;
+}
+
+.leftContent {
+    margin: 0 0 5rem 0;
+    width: 100%;
+    height: 350px;
+    padding: 5rem ;
+}
+
+.rightContent .table {
+    width: 100%;
+    border-top: 3px solid rgb(247, 141, 20);
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 1rem 0 0;
+}
+
+.rightContent .table .title td {
+    font-size: 2rem;
+    padding: 1rem 0;
+   
+}
+.underT  {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    border-bottom: 1px solid rgb(247, 141, 20, 0.3 );
+}
+
+
+.storeContent {
+    position: relative;
+    width: 100%;
+    padding: 5rem 1.5rem ;
+    text-align: center;
+}
+
+.storeContent h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 2rem 1rem;
+    font-family: Parisienne;
+    text-align: center;
+}
+
+.storeBox {
+    display: none;
+    position: relative;
+    font-size: 1.15rem;
+    line-height: 1.5;  
+}
+
+.mobileStoreBox {
+    display: block;
+}
+
+.mobileStoreBox span {
+ 
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-weight: 500;
+
+}
+
+.mobileStoreBox figure .pic {
+    width:100% !important;
+    height: 450px !important;
+    margin: 0 0 1rem 0;
+}
+
+
+ 
+.storeContent  .boxArrows i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 5rem;
+    color: #333;
+    
+    
+}
+
+.storeContent  .boxArrows i:nth-child(1) {
+   margin: 0 0 0 -650px;
+}
+.storeContent  .boxArrows i:nth-child(2) {
+    margin: 0 0 0 600px;
+}
+
+.slick-dots {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8%;
+    font-size: 0;
+}
+
+.slick-dots li {
+    padding: 1rem 0.5rem;
+    
+}
+.slick-dots li>button {
+    border: 1px solid#ddd;
+    border-radius: 50%;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    
+}
+
+.slick-dots  .slick-active>button {
+    background-color: rgb(247, 141, 20);
+}
+
+/*section06*/
+.lastMain {
+    padding: 5rem 0;
+}
+
+.lastText {
+    width: 100%;
+    text-align: center;
+}
+
+.appContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.appPic .button {
+    position: static;
+    right: 16.5%;
+    bottom: 10%;
+    
+}
+.appText{
+    position: static;
+    padding:4rem 2rem 0 2rem;
+    
+}
+
+.appText h3 {
+    font-size: 3rem;
+    margin:0 0 2rem 0 ;
+    font-weight: 500;
+    text-align: center;
+}
+.appText span {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.textFlex {
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    text-align: left;
+    
+}
+
+.textFlex ul>li {
+    margin: 2rem 0;
+}
+
+.lastText h2 {
+    margin: 1.5rem 0;
+    font-size: 3rem;
+}
+
+.lastText strong {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+
+.lastText .appPic .phone {
+    display: block;
+    padding: 2rem 3rem  5rem 0;
+
+}
+
+/*footer*/
+.Footer {
+    width: 100%;
+    height: 42vh;
+    background: linear-gradient(bisque 20%, rgb(247, 141, 20));
+    text-align: center;
+    
+}
+.footerContainer {
+    font-size: 1.7rem;
+}
+.footerLogo {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 2rem 0;
+}
+
+.topLine ul {
+    display: flex;
+    flex-direction: column;
+   
+    line-height: 2.5rem;
+    
+}
+.topLine ul>li {
+    margin: 0 1rem;
+}
+
+.topLine ul>li~li::before {
+    content: "";
+    display: none;
+    height: 1.2rem;
+    width: 1px;
+    background: rgb(68, 67, 67);
+    opacity: 0.7;
+    margin: 0 0.5rem;
+}
+
+.bottomLine {
+   position: relative;
+}
+.footerIcon {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    left: 24%; 
+    font-size: 2.1rem;
+}
+
+.to_top {
+    bottom: 5%;
+    right: 5%;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+
+
+
 
 }
