@@ -981,7 +981,7 @@ html {
     text-align: center;
     font-size: 2rem;
     font-weight: 500;
-    padding: 2rem 0;
+    padding: 3rem 0;
     background-color:  rgb(247, 141, 20) ;
 }
 
@@ -992,7 +992,7 @@ html {
     border-top: 1px solid#fff;
     position: relative;
     background-color: rgb(247, 141, 20) ;
-    height: 13vh;
+    padding: 1rem;
     text-align: center;
     color: #fff;
 }

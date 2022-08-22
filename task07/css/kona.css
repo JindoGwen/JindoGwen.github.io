@@ -1,0 +1,94 @@
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+
+/*header*/
+.Header {
+    line-height: 10rem; 
+}
+
+.Header .headerContainer {
+    width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.headerContainer h1 img {
+    height: 7rem;
+}
+
+.headerContainer .gnb>ul {
+  display: flex;
+  gap:30px;
+  font-size: 1.8rem;
+  
+}
+
+
+/*section01*/
+.MainBg {
+position: relative;
+
+}
+.BgImg {
+    
+}
+.MainBg .BgContent {
+    position: absolute;
+    bottom: 0;
+    left: 18%;
+    padding: 5rem;
+    background-color:rgba(255,255,255);
+    width: 50rem;
+    text-align: center;
+}
+
+.MainBg .BgContent h2 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin: 3rem 0;
+}
+
+.MainBg .BgContent strong {
+    display: block;
+    margin: 1rem 0 0 0;
+    font-size: 1.6rem;
+    color: rgb(129, 77, 13);
+}
+
+.MainBg .BgContent p {
+    margin: 2rem 0 0 0;
+    font-size: 1.46rem;
+    line-height: 1.9rem;
+}
+
+/*section02*/
+.lineInformation {
+    padding: 10rem ;
+    
+}
+
+.lineInformation {
+    
+    
+}
+.lineContainer {
+    position: absolute;
+    left: 18%;
+    display: flex;
+    text-align: center;
+}
+
+.lineInformation .content {
+    width: 31rem;
+    font-size: 2rem;
+    padding: 5rem;
+    border: 1px solid rgb(235, 229, 229);
+}
+
+
+
