@@ -1,0 +1,143 @@
+html {
+    font-size: 15px;
+    overflow-x: hidden;
+}
+/*Header*/
+.Header {
+    color: #fff;
+}
+
+.Header .topHrader {
+    background-color: rgb(5, 5, 5);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.topHrader .iconBox span{
+    margin: 0 1rem;
+}
+.topHrader .iconBox i {
+    margin: 0 1rem;
+}
+
+.Header .container {
+    position: absolute;
+    left: 50%;
+    top: 4rem;
+    transform: translateX(-50%);
+    text-align: center;
+    
+}
+
+.Header .container .Gnb {
+    margin: 2.5rem 0 0 0;
+    font-size: 1.15rem;
+}
+
+.container .Gnb ul {
+    display: flex;
+    gap: 30px;
+}
+
+.mbtn {
+    display: none;
+}
+
+/*section01*/
+.bgImg {
+    background: url(../img/simple01.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 80vh;
+}
+
+
+/*respansive ver*/
+@media(max-width:768px){
+    /*Header*/
+.Header {
+    color: #fff;
+}
+
+.Header .topHrader {
+    display: none;
+    background-color: rgb(5, 5, 5);
+    padding: 1rem;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.topHrader .iconBox span{
+    margin: 0 1rem;
+}
+.topHrader .iconBox i {
+    margin: 0 1rem;
+}
+
+.Header .container {
+    position: fixed;
+    left: 0;
+    top: 1rem;
+    transform: translateX(0);
+    text-align: center;
+    
+}
+.Header .container h1 {
+   width: 100px;
+   z-index: 999;
+}
+
+.Header .container .Gnb {
+    opacity: 0;
+    position: absolute;
+    top: 25px;
+    width: 500px;
+    height: 100vh;
+    padding: 1rem 5rem 0 0;
+    background-color: rgb(10, 10, 10);
+    color: #fff;
+    font-size: 1.15rem;
+    
+}
+.on {
+ opacity: 1 !important;
+}
+
+
+
+.container .Gnb ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container .Gnb ul>li {
+    border-bottom: 1px solid#ddd;
+    padding: 2rem 3rem 3rem 3rem;
+}
+
+.mbtn {
+    display: block;
+    position: fixed;
+    top: 2.5%;
+    right: 2%;
+    font-size: 2rem;
+    z-index: 999;
+}
+
+/*section01*/
+.bgImg {
+    background: url(../img/simple01.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 50vh;
+}
+}
+
+
+
+
