@@ -8,33 +8,39 @@ html {
 }
 
 .Header .topHrader {
-    background-color: rgb(5, 5, 5);
+    position: absolute;
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ddd;
     font-size: 0.8rem;
     font-weight: 300;
+    z-index: 999;
 }
 
-.topHrader .iconBox span{
-    margin: 0 1rem;
+.Header .iconBox {
+    position: absolute;
+    padding: 1rem;
+    right: 0;
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 300;
+    z-index: 999; 
 }
-.topHrader .iconBox i {
-    margin: 0 1rem;
+
+.Header .iconBox i {
+    margin: 0 1.2rem;
 }
 
 .Header .container {
     position: absolute;
     left: 50%;
-    top: 4rem;
-    transform: translateX(-50%);
+    top: 1rem;
+    transform: translateX(-48%);
     text-align: center;
-    
+    z-index: 999;
 }
 
 .Header .container .Gnb {
-    margin: 2.5rem 0 0 0;
+    margin: 1rem 0 0 1.8rem;
     font-size: 1.15rem;
 }
 
@@ -48,11 +54,131 @@ html {
 }
 
 /*section01*/
+.mainBg {
+   
+}
+
 .bgImg {
+    
     background: url(../img/simple01.jpg) no-repeat center center/cover;
     width: 100%;
     height: 80vh;
 }
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+
+
+}
+.bgBox {
+    width: 1200px;
+    margin: 0 auto;
+    left: 50%;
+    bottom: 0.5%;
+    display: flex;
+    gap: 10px;
+    background-color: #fff;
+}
+
+.bgBox figure {
+    flex: 1;
+}
+
+ .boxContent {
+    padding: 1rem 0 0 0;
+    text-align: center;
+}
+
+ .boxContent h3 {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0 1rem 0;
+   
+}
+
+
+.boxContent h3::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 3.8rem;
+    height: 2px;
+    background: #dfa405;
+}
+.boxContent p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.lineText {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.lineText span {
+    display: inline-block;
+    margin: 1rem 0;
+    background: #000000;
+    color: #fff;
+    padding: 1rem;
+
+}
+
+/*section02*/
+.lineImg {
+    padding: 2rem 0;
+}
+
+.imgcontent {
+    position: relative;
+    background: url(../img/main01.jpg) no-repeat fixed center center/cover ;
+    width: 100%;
+    height: 50vh;
+    
+    
+}
+
+.imgcontent .insideContent {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    width: 750px;
+    height: 485px;
+    padding: 15rem 0 5rem 0;
+    background: rgba(0,0 ,0,0.5);
+    text-align: center;
+}
+
+.imgcontent .insideContent  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.imgcontent .insideContent>span {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #fff;
+
+}
+
+.imgcontent .insideContent>span:hover{
+    background-color: #000000;
+    color: #fff;
+}
+
+
+
+
+
+
 
 
 /*respansive ver*/
@@ -66,25 +192,23 @@ html {
     display: none;
     background-color: rgb(5, 5, 5);
     padding: 1rem;
-    justify-content: space-between;
     border-bottom: 1px solid #ddd;
     font-size: 0.8rem;
     font-weight: 300;
 }
 
-.topHrader .iconBox span{
-    margin: 0 1rem;
-}
-.topHrader .iconBox i {
-    margin: 0 1rem;
+.Header .iconBox {
+    display: none;
+    
 }
 
+
 .Header .container {
-    position: fixed;
-    left: 0;
-    top: 1rem;
+    background: #000000;
+    position: static;
+    padding: 1rem;
     transform: translateX(0);
-    text-align: center;
+    text-align: center; 
     
 }
 .Header .container h1 {
@@ -93,22 +217,21 @@ html {
 }
 
 .Header .container .Gnb {
-    opacity: 0;
-    position: absolute;
-    top: 25px;
-    width: 500px;
+    display: none;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: calc(100% - 90px) ;
     height: 100vh;
-    padding: 1rem 5rem 0 0;
     background-color: rgb(10, 10, 10);
     color: #fff;
     font-size: 1.15rem;
     
+    
 }
 .on {
- opacity: 1 !important;
+   display: block  !important;
 }
-
-
 
 .container .Gnb ul {
     display: flex;
@@ -118,9 +241,8 @@ html {
 
 .container .Gnb ul>li {
     border-bottom: 1px solid#ddd;
-    padding: 2rem 3rem 3rem 3rem;
+    line-height: 6rem;
 }
-
 .mbtn {
     display: block;
     position: fixed;
